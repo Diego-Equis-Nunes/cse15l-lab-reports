@@ -1,32 +1,32 @@
-Main Title 
+# Main Title 
 
 Brief Overview
 
-Part 1 - Group up
+## Part 1 - Group up
 
 Description
 
-Part 2 - Make a course specific account
+## Part 2 - Make a course specific account
 
 Description
 
-Part 3 - Download Visual Studio Code
+## Part 3 - Download Visual Studio Code
 
 Description
 
-Part 4 - Connecto to the remote server
+## Part 4 - Connecto to the remote server
 
 Description
 
-Part 5 - Test Commands
+## Part 5 - Test Commands
 
 Description
 
-Part 6 - Working with Github
+## Part 6 - Working with Github
 
 Description
 
-Part 7 - Create your own Github page
+## Part 7 - Create your own Github page
 
 Description
 
