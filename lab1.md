@@ -1,6 +1,6 @@
-# Main Title 
+# Remote Access with Github
 
-Brief Overview
+In this post it'll go over the steps to create a website for lap reports, specifically as an incoming CSE15L student. You'll learn how to log onto a remote server under the CSE15L course specific account.
 
 ## Part 1 - Group up
 
