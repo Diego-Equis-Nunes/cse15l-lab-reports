@@ -12,7 +12,7 @@ In your groups, you'll each individually use the link [CSE15L Account](https://s
 
 ## Part 3 - Download Visual Studio Code
 
-If you don't already have it installed as I did, you'll need to install visual studio on your device using the following link [https://code.visualstudio.com/]. If you are unable to install for any reason, you can also log into visual studio code on the lab computers.
+If you don't already have it installed as I did, you'll need to install visual studio on your device using the following link [Install Visual Studio Code](https://code.visualstudio.com/). If you are unable to install for any reason, you can also log into visual studio code on the lab computers.
 
 ## Part 4 - Connecto to the remote server
 
