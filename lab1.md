@@ -14,7 +14,7 @@ In your groups, you'll each individually use the link [CSE15L Account](https://s
 
 If you don't already have it installed as I did, you'll need to install visual studio on your device using the following link [Install Visual Studio Code](https://code.visualstudio.com/). If you are unable to install for any reason, you can also log into visual studio code on the lab computers.
 
-## Part 4 - Connecto to the remote server
+## Part 4 - Connect to the remote server
 
 Once your account is created and visual studio code is involved, you will now connnect to the CSE15L remote server. You'll have to install Git on windows by using this link [Windows Install Github](https://gitforwindows.org/) and then open it in visual studio code by going to terminal and opening a new terminal. Fnially you'll type in the command "ssh cs15lwi23**zz**@ieng6.ucsd.edu" but replace the **zz** with your account for the course's letters. After doing so type "yes" to the message the terminal prompts and hit enter to complete the connection to the remote server.
 
