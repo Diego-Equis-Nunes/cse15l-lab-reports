@@ -43,4 +43,4 @@ To make a Github page, create an account at [Github Create An Account](https://w
 ## Part 8 - Enjoy
 
 You have now successfully created a student account for CSE15L, connected to its respective remote server and run commands on it. You also now can access your own URL link to edit and show off any of your work for CSE15L using Github to help you prepare for any opportunities in the future. The rest lies on you to take advantage of your newly setup resources. 
-
+.
