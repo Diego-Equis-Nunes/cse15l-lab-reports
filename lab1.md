@@ -36,7 +36,7 @@ Once on the server, you can run some test commands in the terminal such as `cd ~
 
 ## Part 6 - Working with Github
 
-To be able to publish all the neat work you do on the remote server, you'll want to make a Github page to show it off. This will allow you to have a page you can link to resumes or a portfolio to show off to companies to prove your qualification in future endeavors.
+To be able to publish all the neat work you do on the remote server, you'll want to make a Github page to show it off. This will allow you to have a page you can link to resumes or a portfolio to show off to companies to prove your qualification in future endeavors. The next step will help walk you through that process to allow you to have this professionaly recognized resource at your disposal.
 
 ![Image](CreatedGitHubPage.png)
 
