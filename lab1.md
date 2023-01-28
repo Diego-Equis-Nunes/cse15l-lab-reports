@@ -30,7 +30,7 @@ However, you should replace the **zz** with your account for the course's letter
 
 ## Part 5 - Test Commands
 
-Once on the server, you can run some test commands in the terminal such as `cd ~` or `cd` or `ls - a` or the one I used which is `ls -lat` to see if you can work on the remote server. After successfully running some commands you can log off of the remote server using "control + D" or typing "exit" into the terminal.
+Once on the server, you can run some test commands in the terminal such as `cd ~`, `cd`, `ls - a` or the one I used which is `ls -lat` to see if you can work on the remote server. After successfully running some commands you can log off of the remote server using "control + D" or typing "exit" into the terminal.
 
 ![Image](VS Code Remote Connection Run Commands.png)
 
