@@ -6,6 +6,9 @@ In this post I'll go over the steps to create a website for lap reports, specifi
 
 First things first you'll get into a group of 6 students mentored by a teaching assistant for the course. You'll go to google docs and access a shared document to track your team's progress.
 
+![Image](GroupUpLab1.png)
+
+
 ## Part 2 - Make a course specific account
 
 In your groups, you'll each individually use the link [CSE15L Account](https://sdacs.ucsd.edu/~icc/index.php) to access your CSE15L specific account. You''ll be sent to a page with your course ID, which you then use to create an account with it as the username and a unique password of your choosing. Don't be afraid to ask your team members for help, as I learned that asking a friend sitting close by is what ensured this part of the process went smoothly. 
