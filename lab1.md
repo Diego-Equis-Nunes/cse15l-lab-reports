@@ -38,6 +38,8 @@ Once on the server, you can run some test commands in the terminal such as `cd ~
 
 To be able to publish all the neat work you do on the remote server, you'll want to make a Github page to show it off. This will allow you to have a page you can link to resumes or a portfolio to show off to companies to prove your qualification in future endeavors.
 
+![Image](CreatedGitHubPage.png)
+
 ## Part 7 - Create your own Github page
 
 To make a Github page, create an account at [Github Create An Account](https://www.github.com) and then use the create a repository button once you log in. You will name the repository "cse15l-lab-reports" for the purposes of this class and then create a file within the repository. Name your first file index.md, using .md to enable markdown formatting on the file. Hit the commit file button on the bottom of the page to post the file itself. You'll have to put text into the file for anything to show once you access it again. IF you head to settings and go to the pages section, you'll need to change the branch dropdown option from "none" to "main." Save this option and after a few minutes at the top of that page, a link to your file's URL will be available for you to access. To make your file showing on the link more interesting, you'll want to explore how markdown works with information from these links [Markdown Formatting Tricks](https://commonmark.org/help/) and [The Basics of Markdown](https://www.markdownguide.org/getting-started/) or any other source of information with tutorials on it to enchance your understanding of how the formatting works.
