@@ -24,7 +24,7 @@ Once your account is created and visual studio code is involved, you will now co
 
 `$ ssh cs15lwi23**zz**@ieng6.ucsd.edu`
 
-but replace the **zz** with your account for the course's letters. After doing so type "yes" to the message the terminal prompts and hit enter to complete the connection to the remote server.
+However, you should replace the **zz** with your account for the course's letters. After doing so type "yes" to the message the terminal prompts and hit enter to complete the connection to the remote server.
 
 ![Image](VS Code Remote Connection.png)
 
