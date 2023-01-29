@@ -1,12 +1,12 @@
-#Servers and Bugs
+# Servers and Bugs
 
-#Part 1
-##Web Server
+# Part 1
+## Web Server
 
-#Part 2
+# Part 2
 
-##Bugs
+## Bugs
 
-#Part 3
+# Part 3
 
-##Subtitle Learning Experience
+## Subtitle Learning Experience
