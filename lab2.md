@@ -4,9 +4,7 @@
 ## Web Server
 
 # Part 2
-
 ## Bugs
 
 # Part 3
-
 ## Subtitle Learning Experience
