@@ -2,6 +2,82 @@
 
 ## Web Server
 
+The following code block are the imports, handler class and initialized variables for the StringServer created:
+
+```
+import java.io.IOException;
+import java.net.URI;
+import java.util.ArrayList;
+
+class Handler implements URLHandler {
+    // String Array to be manipulated on the server
+    ArrayList<String> serverList = new ArrayList<String>();
+    //Initialize String that will be returned and printed to page
+    String serverOutput;
+```
+
+After the imports and variables are created, the handler method for the StringServer is created and looks like the following:
+
+```
+public String handleRequest(URI url) {
+        if (url.getPath().equals("/")) 
+        {
+            //Creates indentation between added Strings
+            return String.join("\n", serverList);
+        } 
+        else 
+        {
+            //Pathing for server
+            System.out.println("Path: " + url.getPath());
+            //When add-message is put into url
+            if (url.getPath().contains("/add-message")) 
+            {
+                //Take whatever comes after the equals sign as the input
+                String[] parameters = url.getQuery().split("=");
+                //s for s=, indicating string equals
+                if (parameters[0].equals("s")) 
+                {
+                    //Add user inputted message
+                    serverList.add(parameters[1]);
+                    //Reset string that will be outputted
+                    serverOutput = "";
+                    //Add to string based on user input
+                    for(int i = 0; i < serverList.size();i++)
+                    {
+                        //Add string and spacing to output String
+                        serverOutput += ((serverList).get(i) + "\n");
+                    }
+                    //Return String to be outputted
+                    return serverOutput;
+                }
+            }
+            //Return error message if all else fails
+            return "Error!";
+        }
+    }
+}
+```
+
+Beneath the handler method for the StringServer is the StringServer class itself used to create the local host for the server. The code is as follows:
+
+```
+class StringServer {
+    public static void main(String[] args) throws IOException {
+        //Go through args and show error if number is not valid.
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+        //Start StringServer
+        Server.start(port, new Handler());
+    }
+}
+```
+
+
+
 StringServer code as a block
 
 Image one of using /add
