@@ -17,18 +17,77 @@ Describe after images
 
 ## Bugs
 
+In lab 3, there was a bug with the method `testReverseInPlace()` that I was able to solve
 Choose a bug from lab 3 and
 
-Code block in markdown of failure inducing input as a JUnit test and associated code with it
+The following JUnit test was a failure inducing input of the method:
 
-Code block in markdown that doesn't induce a failure as a JUnit test and associated code with it
+```
+@Test
+public void testReverseInPlace() {
+  int[] input1 = {3, 4, 5};
+  ArrayExamples.reverseInPlace(input1);
+  assertArrayEquals(new int[]{5, 4, 3}, input1);
+}
+```
 
-A screenshot of the symptoms of the two JUnit tests
+The following JUnit test was not a failure inducing input of the method:
 
-Two code blocks of the before and after code change of bugged code and how it got fixed
+```
+@Test
+public void testReverseInPlace() {
+  int[] input1 = {3};
+  ArrayExamples.reverseInPlace(input1);
+  assertArrayEquals(new int[]{3}, input1);
+}
+```
 
-Brief description of how the change fixed the issue.
+The associated code for both JUnit tests, that occured before the bug was fixed, was the method `reverseInPlace()`
 
+```
+static void reverseInPlace(int[] arr) {
+    int[] tempArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      tempArray[0] = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+
+The symtpom of the failure inducing input mentioned above can been seen in the image below:
+
+![Image](Lab2FailureSymptom)
+
+The symtpom of the successful input mentioned above can been seen in the image below:
+
+![Image](Lab2SuccessSymptom)
+
+The following code is how the `testReverseInPlace()` code was written it was buggy:
+
+```
+static void reverseInPlace(int[] arr) {
+    int[] tempArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      tempArray[0] = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+
+The following code is how the `testReverseInPlace()` code was written when the bug was fixed:
+
+```
+static void reverseInPlace(int[] arr) {
+    int[] tempArray = new int[arr.length];
+    for(int i = 0; i < arr.length/2; i += 1) {
+      tempArray[0] = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = tempArray[0];
+    }
+  }
+```
+
+The way the changes fixed the issue where as follows. 
 
 ## Learning Experience
 
