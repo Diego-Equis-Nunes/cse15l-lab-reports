@@ -87,7 +87,7 @@ static void reverseInPlace(int[] arr) {
   }
 ```
 
-The way the changes fixed the issue where as follows. 
+The way the changes fixed the issue where as follows. The iteration length of `arr.length` was changed to `arr.length/2` or halved in order to prevent the array from swapping its elements twice. Since the array swapped the firstmost elements with the lastmost ones, it had to stop iterating through that procedure halfway through the array list's length to be effective. I also added the line 'arr[arr.length - i - 1] = tempArray[0];' in order to store the firstmost elements before they got replaced by the lastmost elements. This allowed for the replacement of the lastmost elements with the stored firstmost element, rather than the replaced firstmost element (which was simply the lastmost element that just repaced it) as the previous code was doing when it was bugged. As a result, the code no longer swapped the firstmost and lastmost elements twice as much as it should nor swaped the incorrect elements any longer.
 
 ## Learning Experience
 
