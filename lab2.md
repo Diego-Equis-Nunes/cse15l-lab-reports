@@ -56,11 +56,11 @@ static void reverseInPlace(int[] arr) {
 
 The symtpom of the failure inducing input mentioned above can been seen in the image below:
 
-![Image](Lab2FailureSymptom)
+![Image](Lab2FailureSymptom.png)
 
 The symtpom of the successful input mentioned above can been seen in the image below:
 
-![Image](Lab2SuccessSymptom)
+![Image](Lab2SuccessSymptom.png)
 
 The following code is how the `testReverseInPlace()` code was written it was buggy:
 
