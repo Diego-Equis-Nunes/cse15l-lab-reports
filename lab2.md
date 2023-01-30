@@ -163,4 +163,4 @@ The way the changes fixed the issue where as follows. The iteration length of `a
 
 ## Learning Experience
 
-From creating and running a web server to debugging code based on JUnit tests, I learned a lot about hosting a server and making sure it runs properly. I did not know that my computer could host and run its own server in any capacity, which is something I learned and was excited about from week two's lab. I also learned a lot about how to navigate url paths since I had to consider how they handled commands for my coded `StringServer` to run properly.
+From creating and running a web server to debugging code based on JUnit tests, I learned a lot about hosting a server and making sure it runs properly. I did not know that my computer could host and run its own server in any capacity, which is something I learned and was excited about from week two's lab. I also learned a lot about how to navigate url paths and how they worked since I had to consider how they handled commands for my coded `StringServer` to run properly.
