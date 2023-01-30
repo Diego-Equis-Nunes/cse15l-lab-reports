@@ -76,12 +76,13 @@ class StringServer {
 }
 ```
 
+The StringServer, after being fully coded can be put up on the local host. It's purpose is to add strings to the page, which can be done by manipulating the URL to handle requests. The following images show the server up, the addition of a single string and the addition of another string after that.
 
+![Image](Lab2ServerUp.png)
 
-StringServer code as a block
+![Image](Lab2ServerHello.png)
 
-Image one of using /add
-Image two of using /add
+![Image](Lab2ServerHelloHowAreYou.png)
 
 Describe after images
 
