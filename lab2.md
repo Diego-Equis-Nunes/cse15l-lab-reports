@@ -91,7 +91,6 @@ For the second image with "Hello" as the output on the first line and "How are y
 ## Bugs
 
 In lab 3, there was a bug with the method `testReverseInPlace()` that I was able to solve
-Choose a bug from lab 3 and
 
 The following JUnit test was a failure inducing input of the method:
 
