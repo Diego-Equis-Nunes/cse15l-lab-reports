@@ -134,7 +134,7 @@ The symtpom of the successful input mentioned above can been seen in the image b
 
 ![Image](Lab2SuccessSymptom.png)
 
-The following code is how the `testReverseInPlace()` code was written it was buggy:
+The following code is how the `testReverseInPlace()` code was written when it was buggy:
 
 ```
 static void reverseInPlace(int[] arr) {
