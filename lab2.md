@@ -2,6 +2,8 @@
 
 ## Web Server
 
+The file `StringServer.java` is a java file with code intializing a web server that supports requests to add and track strings to the web server.
+
 The following code block are the imports, handler class and initialized variables for the `StringServer.java` created:
 
 ```
@@ -58,7 +60,7 @@ public String handleRequest(URI url) {
 }
 ```
 
-Beneath the handler method for the StringServer is the StringServer class itself used to create the local host for the server. The code is as follows:
+Beneath the handler method in the code for the `StringServer.java` is the `StringServer.java` class itself used to create the local host for the server. The code is as follows:
 
 ```
 class StringServer {
@@ -76,7 +78,7 @@ class StringServer {
 }
 ```
 
-The StringServer, after being fully coded can be put up on the local host. It's purpose is to add strings to the page, which can be done by manipulating the URL to handle requests. The following images show the server up, the addition of a single string and the addition of another string after that.
+The `StringServer.java`, after being fully coded can be put up on the local host. It's purpose is to add strings to the page, which can be done by manipulating the URL to handle requests. The following images show the server up, the addition of a single string and the addition of another string after that.
 
 ![Image](Lab2ServerUp.png)
 
