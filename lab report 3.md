@@ -18,7 +18,7 @@ describe, what its doing + why its useful
 
 ## grep wc
 
-decritpion of what it does/is. To read directly about `grep -wc` you can read [Lab Report 2](https://ucsd-cse15l-w23.github.io/week/week4/) for more details.
+decritpion of what it does/is. To read directly about `grep -wc` you can read [Lab Week 4](https://ucsd-cse15l-w23.github.io/week/week4/) for more details.
 
 code block ex
 
