@@ -1,10 +1,10 @@
-#Lab Report 3
+# Lab Report 3
 
-#Researching Commands
+# Researching Commands
 
 Brief description about using Grep and what it does. Talk about going into written_2/
 
-##grep -rl
+## grep -rl
 
 decritpion of what it does/is. Source/where I found it
 
@@ -16,7 +16,7 @@ code block ex
 
 describe, what its doing + why its useful
 
-##grep wc
+## grep wc
 
 decritpion of what it does/is. Source/where I found it
 
@@ -28,7 +28,7 @@ code block ex
 
 describe, what its doing + why its useful
 
-##grep unknown 1
+## grep unknown 1
 
 decritpion of what it does/is. Source/where I found it
 
@@ -40,7 +40,7 @@ code block ex
 
 describe, what its doing + why its useful
 
-##grep unknown 2
+## grep unknown 2
 
 decritpion of what it does/is. Source/where I found it
 
