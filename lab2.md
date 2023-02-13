@@ -78,7 +78,7 @@ class StringServer {
 }
 ```
 
-The `StringServer.java`, after being fully coded can be put up on the local host. It's purpose is to add strings to the page, which can be done by manipulating the URL to handle requests. The following images show the server up, the addition of a single string and the addition of another string after that.
+The `StringServer.java`, after being fully coded can be put up on the local host. It's purpose is to add strings to the page, which can be done by manipulating the URL to handle requests. The following images show the server up, the request for the addition of a single string and the request for the addition of another string after that, respectively.
 
 ![Image](Lab2ServerUp.png)
 
