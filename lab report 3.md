@@ -2,7 +2,7 @@
 
 # Researching Commands
 
-The command `grep` is used to search for patterns within files. This document will be exploring examples of different command line options for the `grep` command. The foled `written_2/` will be searched through using the various `grep` commands present. 
+The command `grep` is used to search for patterns within files using a string to print the specified result. This document will be exploring examples of different command line options for the `grep` command to achieve different results. The foled `written_2/` will be searched through using the various `grep` commands present. 
 
 ## grep -rl
 
@@ -30,7 +30,8 @@ describe, what its doing + why its useful
 
 ## grep -rw
 
-The command `grep rw` recursively searches files for a pattern and returns the count of lines with that pattern. The `-r` aspect triggers the recursion, while the `-c` is responsible for listing the count. Running the command returns the count of lines with the target word specified. The command is written as `grep -rc "<target_word>" <file_path>`. To learn directly about `grep -rw` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I referenced.
+The command `grep rw` recursively searches for a targeted word and returns all lines with that entire word. The `-r` aspect triggers the recursion, while the `-w` functions to find the target word and the file and line it is in. Running the command returns the files with the word and the lines of text within the files that the word is in. The command is written as `grep -rw "<target_word>" <file_path>`. To learn directly about `grep -rw` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) which I referenced.
+
 code block ex
 
 describe, what its doing + why its useful
