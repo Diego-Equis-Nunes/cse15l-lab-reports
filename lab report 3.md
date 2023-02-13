@@ -2,7 +2,7 @@
 
 # Researching Commands
 
-Brief description about using Grep and what it does. Talk about going into written_2/
+The command `grep` is used to search for patterns within files. This document will be exploring examples of different command line options for the `grep` command. The foled `written_2/` will be searched through using the various `grep` commands present. 
 
 ## grep -rl
 
