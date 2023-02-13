@@ -28,7 +28,7 @@ code block ex
 
 describe, what its doing + why its useful
 
-## grep 
+## grep -rw
 
 decritpion of what it does/is. Source/where I found it
 
@@ -40,7 +40,7 @@ code block ex
 
 describe, what its doing + why its useful
 
-## grep unknown pipes?
+## grep -rn
 
 decritpion of what it does/is. Source/where I found it
 
