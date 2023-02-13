@@ -16,7 +16,7 @@ class Handler implements URLHandler {
     String serverOutput;
 ```
 
-After the imports and variables are created, the handler method for the StringServer is created and looks like the following:
+After the imports and variables are created, the handler method for the `StringServer.java` is created and looks like the following:
 
 ```
 public String handleRequest(URI url) {
