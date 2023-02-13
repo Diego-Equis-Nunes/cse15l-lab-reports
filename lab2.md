@@ -2,7 +2,7 @@
 
 ## Web Server
 
-The following code block are the imports, handler class and initialized variables for the StringServer created:
+The following code block are the imports, handler class and initialized variables for the `StringServer.java` created:
 
 ```
 import java.io.IOException;
