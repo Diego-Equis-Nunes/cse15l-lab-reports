@@ -30,8 +30,7 @@ describe, what its doing + why its useful
 
 ## grep -rw
 
-decritpion of what it does/is. Source/where I found it
-
+The command `grep rw` recursively searches files for a pattern and returns the count of lines with that pattern. The `-r` aspect triggers the recursion, while the `-c` is responsible for listing the count. Running the command returns the count of lines with the target word specified. The command is written as `grep -rc "<target_word>" <file_path>`. To learn directly about `grep -rw` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I referenced.
 code block ex
 
 describe, what its doing + why its useful
@@ -42,8 +41,7 @@ describe, what its doing + why its useful
 
 ## grep -rn
 
-decritpion of what it does/is. Source/where I found it
-
+The command `grep rn` recursively searches files for a pattern and returns the count of lines with that pattern. The `-r` aspect triggers the recursion, while the `-c` is responsible for listing the count. Running the command returns the count of lines with the target word specified. The command is written as `grep -rc "<target_word>" <file_path>`. To learn directly about `grep -rn` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I referenced.
 code block ex
 
 describe, what its doing + why its useful
