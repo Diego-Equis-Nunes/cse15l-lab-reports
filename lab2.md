@@ -83,14 +83,17 @@ The `StringServer.java`, after being fully coded can be put up on the local host
 Server Up
 
 ![Image](Lab2ServerUp.png)
+---
 
 Request to add "Hello"
 
 ![Image](Lab2ServerHello.png)
+---
 
 Request to add "How are you"
 
 ![Image](Lab2ServerHelloHowAreYou.png)
+---
 
 For the second image with "Hello" as the output, the method `handleRequest` is called. The argument in that method is the url path, shown as `url.getPath()` in the code. The values relevant in the field of that class is the input after "s" in the url path that the user types in. The values of the relevant field changed based on what the user typed in the url path, in this case being the string Hello typed in as `localhost:4269/add-message?s=Hello`.
 
@@ -171,4 +174,4 @@ The way the changes fixed the issue where as follows. The iteration length of `a
 
 ## Learning Experience
 
-From creating and running a web server to debugging code based on JUnit tests, I learned a lot about hosting a server and making sure it runs properly. I did not know that my computer could host and run its own server in any capacity, which is something I learned and was excited about from week two's lab. I also learned a lot about how to navigate url paths and how they worked since I had to consider how they handled commands for my coded `StringServer` to run properly.
+From creating and running a web server to debugging code based on JUnit tests, I learned a lot about hosting a server and making sure it runs properly. I did not know that my computer could host and run its own server in any capacity, which is something I learned and was excited about from week two's lab. I also learned a lot about how to navigate url paths and how they worked since I had to consider how they handled commands for my coded `StringServer.java` to run properly.
