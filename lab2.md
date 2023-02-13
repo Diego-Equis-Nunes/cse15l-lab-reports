@@ -80,20 +80,17 @@ class StringServer {
 
 The `StringServer.java`, after being fully coded can be put up on the local host. It's purpose is to add strings to the page, which can be done by manipulating the URL to handle requests. The following images show the server up, the request for the addition of a single string "Hello" and the request for the addition of another string "How are you" after that, respectively.
 
-Server Up
+> Server Up
 
 ![Image](Lab2ServerUp.png)
----
 
-Request to add "Hello"
+> Request to add "Hello"
 
 ![Image](Lab2ServerHello.png)
----
 
-Request to add "How are you"
+> Request to add "How are you"
 
 ![Image](Lab2ServerHelloHowAreYou.png)
----
 
 For the second image with "Hello" as the output, the method `handleRequest` is called. The argument in that method is the url path, shown as `url.getPath()` in the code. The values relevant in the field of that class is the input after "s" in the url path that the user types in. The values of the relevant field changed based on what the user typed in the url path, in this case being the string Hello typed in as `localhost:4269/add-message?s=Hello`.
 
