@@ -128,11 +128,11 @@ static void reverseInPlace(int[] arr) {
   }
 ```
 
-The symtpom of the failure inducing input mentioned above can been seen in the image below:
+The symptom of the failure inducing input mentioned above can been seen in the image below:
 
 ![Image](Lab2FailureSymptom.png)
 
-The symtpom of the successful input mentioned above can been seen in the image below:
+The symptom of the successful input mentioned above can been seen in the image below:
 
 ![Image](Lab2SuccessSymptom.png)
 
