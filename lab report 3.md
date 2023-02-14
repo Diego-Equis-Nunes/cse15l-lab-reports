@@ -49,6 +49,8 @@ written_2/travel_guides/berlitz1/WhereToLakeDistrict.txt
 written_2/travel_guides/berlitz1/WhereToMadeira.txt
 `
 
+In this new command the search for the word vista is narrowed into the `berlitz1` directory within travel guides. The command therefore allows the user to search subdirectories for relevant or irrelavant information within it to assess content of specific files rather than the entire directory at once. The command returns whch files within `berlitz` have the word "vista," making the printed output much more manageable and specific to the directory.
+
 ## grep -rc
 
 The command `grep rc` recursively searches files for a pattern and returns the count of lines with that pattern. The `-r` aspect triggers the recursion, while the `-c` is responsible for listing the count. Running the command returns the count of lines with the target word specified. The command is written as `grep -rc "<target_word>" <file_path>`. To learn directly about `grep -rc` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I referenced.
