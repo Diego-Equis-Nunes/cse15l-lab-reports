@@ -219,7 +219,7 @@ The command `grep rn` recursively searches for a targeted word and returns a num
 
 Running `grep -rn` `in written_2/` using the command
 
-`grep -rn "Chronicles" written_2/travel_guides/berlitz1/History*`
+`$ grep -rn "Chronicles" written_2/travel_guides/berlitz1/History*`
 
 Would return 
 
@@ -232,13 +232,12 @@ Description
 
 Running `grep -rn` `in written_2/` using the command
 
-`grep -rn "Chronicles" written_2/`
+`$ grep -rn "great pioneering skill" written_2/`
 
 Would return 
 
 `
-written_2/travel_guides/berlitz1/HistoryJapan.txt:9:        (“Chronicles of Japan”), the islands of Japan were born of a marriage
-written_2/travel_guides/berlitz1/HistoryJapan.txt:23:        Prehistory and Early Chronicles
+written_2/travel_guides/berlitz2/Canada-History.txt:25:With great pioneering skill, Upper Canada’s first lieutenant governor, John Simcoe, pushed new highways north from Lake Ontario and west to Hamilton. He established the provincial capital at a trading post, Toronto, in the heart of a malarial swamp, and renamed it York. A landed gentry made up of army officers, government officials, and commercial speculators ran the province, creating a hereditary aristocracy known as the Family Compact. More Americans were lured over the border with land grants; the population rose from 14,000 in 1792 to 90,000 by 1812. French-Canadians were also multiplying rapidly, from 60,000 when New France was abandoned in 1760 to 330,000 fifty years later.
 `
 
 Description
