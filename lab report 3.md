@@ -57,7 +57,7 @@ The command `grep rc` recursively searches files for a pattern and returns the c
 
 Running `grep -rc` `in written_2/` using the command
 
-`grep -rc "vistas" written_2/travel_guides/berlitz1`
+`$ grep -rc "vistas" written_2/travel_guides/berlitz1`
 
 Would return
 
@@ -169,7 +169,7 @@ Description
 
 Running `grep -rc` `in written_2/` using the command
 
-`grep -rc "vistas" written_2/travel_guides/berlitz2/Vallarta*`
+`$ grep -rc "vistas" written_2/travel_guides/berlitz2/Vallarta*`
 
 Would return
 
@@ -187,7 +187,7 @@ The command `grep rw` recursively searches for a targeted word and returns all l
 
 Running `grep -rw` `in written_2/` using the command
 
-`grep -rw "Chronicles" written_2/`
+`$ grep -rw "Chronicles" written_2/`
 
 Would return 
 
@@ -202,7 +202,7 @@ Description
 
 Running `grep -rw` `in written_2/` using the command
 
-`grep -rw "Chronicles" written_2/travel_guides/berlitz1/History*`
+`$ grep -rw "Chronicles" written_2/travel_guides/berlitz1/History*`
 
 Would return 
 
