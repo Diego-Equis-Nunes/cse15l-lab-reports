@@ -228,7 +228,7 @@ Would return
   written_2/travel_guides/berlitz1/HistoryJapan.txt:23:        Prehistory and Early Chronicles
   `
 
-Description
+This example command searches the same pattern and directory as the previous `rw` one does. It finds all files titled "History" within the `written_2/travel_guides/berlitz1/` directory for the key word "chronicles." However, since it is usign `rn` the command not only prints the lines in which "chronicles" exists, but also prints exactly what line numbers they exist at. This allows the user to still search specific texts while also obtaining more relevant information on the key word's whereabouts that would increase their search efficiency.
 
 Running `grep -rn` `in written_2/` using the command
 
@@ -240,5 +240,4 @@ Would return
   written_2/travel_guides/berlitz2/Canada-History.txt:25:With great pioneering skill, Upper Canada’s first lieutenant governor, John Simcoe, pushed new highways north from Lake Ontario and west to Hamilton. He established the provincial capital at a trading post, Toronto, in the heart of a malarial swamp, and renamed it York. A landed gentry made up of army officers, government officials, and commercial speculators ran the province, creating a hereditary aristocracy known as the Family Compact. More Americans were lured over the border with land grants; the population rose from 14,000 in 1792 to 90,000 by 1812. French-Canadians were also multiplying rapidly, from 60,000 when New France was abandoned in 1760 to 330,000 fifty years later.
   `
 
-Description
-
+This final example command searches the entire `written_2/` directory. It prints out the line number of every line in the entire directory with the phrase "great pioneering skill." This command provides great use because it accesses all information in the directory to provide the pattern's location giving a more wholistic view of the directory. It uses a more complex phrase to search for exemplifying that searches aren't limited to single words or simple patterns and still successfully numbers where the target phrase can by displaying its line number in its file path.
