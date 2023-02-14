@@ -8,7 +8,7 @@ The command `grep` is used to search for patterns within files using a string to
 
 The command `grep rl` is a quick way to recursively search files for a line. The `-r` aspect does the recursion, while the `-l` is responsible for listing file names. Running the command returns the file with the target word specified. The command is written as `grep -rl "<target_word>" <file_path>` and searches for the target word in the specified file path and returns all files with the word. To read directly about `grep -rl` you can read [this article](https://alvinalexander.com/linux-unix/recursive-grep-r-searching-egrep-find/#:~:text=grep%20%2Drl%20alvin%20.,i%20for%20case%2Dinsensitive%20searches) with all the details.
 
-Running `grep -rl` in written_2/ using the command
+Running `grep -rl` in `written_2/` using the command
 
 `$ grep -rl "vistas" written 2_/`
 
@@ -32,7 +32,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
 
 In the example above the command is searching for the word "vistas" in the directory `written_2/` and returns all the files with the word in it. This is useful because it allows the user to check for the existence of specific contents within the entire directory at will. It can be determined if the word or pattern is relevant to any of the information in the entire directory from the command.
 
-Running `grep -rl` in written_2/ using the command
+Running `grep -rl` `in written_2/` using the command
 
 `$ grep -rl "vistas" written 2_/travel_guides/berlitz1`
 
@@ -55,13 +55,131 @@ In this new command the search for the word vista is narrowed into the `berlitz1
 
 The command `grep rc` recursively searches files for a pattern and returns the count of lines with that pattern. The `-r` aspect triggers the recursion, while the `-c` is responsible for listing the count. Running the command returns the count of lines with the target word specified. The command is written as `grep -rc "<target_word>" <file_path>`. To learn directly about `grep -rc` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I referenced.
 
-code block ex
+Running `grep -rc` `in written_2/` using the command
 
-describe, what its doing + why its useful
+`grep -rc "vistas" written_2/travel_guides/berlitz1`
 
-code block ex
+Would return
 
-describe, what its doing + why its useful
+`
+written_2/travel_guides/berlitz1/HandRHawaii.txt:0
+written_2/travel_guides/berlitz1/HandRHongKong.txt:0
+written_2/travel_guides/berlitz1/HandRIbiza.txt:0
+written_2/travel_guides/berlitz1/HandRIsrael.txt:0
+written_2/travel_guides/berlitz1/HandRIstanbul.txt:0
+written_2/travel_guides/berlitz1/HandRJamaica.txt:0
+written_2/travel_guides/berlitz1/HandRJerusalem.txt:0
+written_2/travel_guides/berlitz1/HandRLakeDistrict.txt:0
+written_2/travel_guides/berlitz1/HandRLasVegas.txt:0
+written_2/travel_guides/berlitz1/HandRLisbon.txt:0
+written_2/travel_guides/berlitz1/HandRLosAngeles.txt:0
+written_2/travel_guides/berlitz1/HandRMadeira.txt:0
+written_2/travel_guides/berlitz1/HandRMadrid.txt:0
+written_2/travel_guides/berlitz1/HandRMallorca.txt:0
+written_2/travel_guides/berlitz1/HistoryDublin.txt:0
+written_2/travel_guides/berlitz1/HistoryEdinburgh.txt:0
+written_2/travel_guides/berlitz1/HistoryEgypt.txt:0
+written_2/travel_guides/berlitz1/HistoryFrance.txt:0
+written_2/travel_guides/berlitz1/HistoryFWI.txt:0
+written_2/travel_guides/berlitz1/HistoryGreek.txt:0
+written_2/travel_guides/berlitz1/HistoryHawaii.txt:0
+written_2/travel_guides/berlitz1/HistoryHongKong.txt:0
+written_2/travel_guides/berlitz1/HistoryIbiza.txt:0
+written_2/travel_guides/berlitz1/HistoryIndia.txt:0
+written_2/travel_guides/berlitz1/HistoryIsrael.txt:0
+written_2/travel_guides/berlitz1/HistoryIstanbul.txt:0
+written_2/travel_guides/berlitz1/HistoryItaly.txt:0
+written_2/travel_guides/berlitz1/HistoryJamaica.txt:0
+written_2/travel_guides/berlitz1/HistoryJapan.txt:0
+written_2/travel_guides/berlitz1/HistoryJerusalem.txt:0
+written_2/travel_guides/berlitz1/HistoryLakeDistrict.txt:0
+written_2/travel_guides/berlitz1/HistoryLasVegas.txt:0
+written_2/travel_guides/berlitz1/HistoryMadeira.txt:0
+written_2/travel_guides/berlitz1/HistoryMadrid.txt:0
+written_2/travel_guides/berlitz1/HistoryMalaysia.txt:0
+written_2/travel_guides/berlitz1/HistoryMallorca.txt:0
+written_2/travel_guides/berlitz1/IntroDublin.txt:1
+written_2/travel_guides/berlitz1/IntroEdinburgh.txt:0
+written_2/travel_guides/berlitz1/IntroEgypt.txt:0
+written_2/travel_guides/berlitz1/IntroFrance.txt:0
+written_2/travel_guides/berlitz1/IntroFWI.txt:0
+written_2/travel_guides/berlitz1/IntroGreek.txt:0
+written_2/travel_guides/berlitz1/IntroHongKong.txt:0
+written_2/travel_guides/berlitz1/IntroIbiza.txt:0
+written_2/travel_guides/berlitz1/IntroIndia.txt:0
+written_2/travel_guides/berlitz1/IntroIsrael.txt:0
+written_2/travel_guides/berlitz1/IntroIstanbul.txt:0
+written_2/travel_guides/berlitz1/IntroItaly.txt:0
+written_2/travel_guides/berlitz1/IntroJamaica.txt:0
+written_2/travel_guides/berlitz1/IntroJapan.txt:0
+written_2/travel_guides/berlitz1/IntroJerusalem.txt:0
+written_2/travel_guides/berlitz1/IntroLakeDistrict.txt:1
+written_2/travel_guides/berlitz1/IntroLasVegas.txt:0
+written_2/travel_guides/berlitz1/IntroLosAngeles.txt:0
+written_2/travel_guides/berlitz1/IntroMadeira.txt:1
+written_2/travel_guides/berlitz1/IntroMadrid.txt:0
+written_2/travel_guides/berlitz1/IntroMalaysia.txt:0
+written_2/travel_guides/berlitz1/IntroMallorca.txt:0
+written_2/travel_guides/berlitz1/JungleMalaysia.txt:0
+written_2/travel_guides/berlitz1/WhatToDublin.txt:0
+written_2/travel_guides/berlitz1/WhatToEdinburgh.txt:0
+written_2/travel_guides/berlitz1/WhatToEgypt.txt:0
+written_2/travel_guides/berlitz1/WhatToFrance.txt:0
+written_2/travel_guides/berlitz1/WhatToFWI.txt:0
+written_2/travel_guides/berlitz1/WhatToGreek.txt:0
+written_2/travel_guides/berlitz1/WhatToHawaii.txt:0
+written_2/travel_guides/berlitz1/WhatToHongKong.txt:0
+written_2/travel_guides/berlitz1/WhatToIbiza.txt:0
+written_2/travel_guides/berlitz1/WhatToIndia.txt:0
+written_2/travel_guides/berlitz1/WhatToIsrael.txt:0
+written_2/travel_guides/berlitz1/WhatToIstanbul.txt:0
+written_2/travel_guides/berlitz1/WhatToItaly.txt:0
+written_2/travel_guides/berlitz1/WhatToJamaica.txt:0
+written_2/travel_guides/berlitz1/WhatToJapan.txt:0
+written_2/travel_guides/berlitz1/WhatToLakeDistrict.txt:0
+written_2/travel_guides/berlitz1/WhatToLasVegas.txt:0
+written_2/travel_guides/berlitz1/WhatToLosAngeles.txt:0
+written_2/travel_guides/berlitz1/WhatToMadeira.txt:0
+written_2/travel_guides/berlitz1/WhatToMalaysia.txt:0
+written_2/travel_guides/berlitz1/WhatToMallorca.txt:0
+written_2/travel_guides/berlitz1/WhereToDublin.txt:0
+written_2/travel_guides/berlitz1/WhereToEdinburgh.txt:0
+written_2/travel_guides/berlitz1/WhereToEgypt.txt:0
+written_2/travel_guides/berlitz1/WhereToFrance.txt:0
+written_2/travel_guides/berlitz1/WhereToFWI.txt:0
+written_2/travel_guides/berlitz1/WhereToGreek.txt:0
+written_2/travel_guides/berlitz1/WhereToHawaii.txt:0
+written_2/travel_guides/berlitz1/WhereToHongKong.txt:0
+written_2/travel_guides/berlitz1/WhereToIbiza.txt:2
+written_2/travel_guides/berlitz1/WhereToIndia.txt:0
+written_2/travel_guides/berlitz1/WhereToIsrael.txt:1
+written_2/travel_guides/berlitz1/WhereToIstanbul.txt:0
+written_2/travel_guides/berlitz1/WhereToItaly.txt:0
+written_2/travel_guides/berlitz1/WhereToJapan.txt:0
+written_2/travel_guides/berlitz1/WhereToJerusalem.txt:2
+written_2/travel_guides/berlitz1/WhereToLakeDistrict.txt:1
+written_2/travel_guides/berlitz1/WhereToLosAngeles.txt:0
+written_2/travel_guides/berlitz1/WhereToMadeira.txt:1
+written_2/travel_guides/berlitz1/WhereToMadrid.txt:0
+written_2/travel_guides/berlitz1/WhereToMalaysia.txt:0
+written_2/travel_guides/berlitz1/WhereToMallorca.txt:0
+`
+
+Description
+
+Running `grep -rc` `in written_2/` using the command
+
+`grep -rc "vistas" written_2/travel_guides/berlitz2/Vallarta*`
+
+Would return
+
+`
+written_2/travel_guides/berlitz2/Vallarta-History.txt:0
+written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:1
+`
+
+Description
 
 ## grep -rw
 
