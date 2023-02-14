@@ -198,7 +198,7 @@ Would return
   written_2/travel_guides/berlitz2/Barcelona-WhereToGo.txt:The Ajuntament, or Casa de la Ciutat, across the plaza has held Barcelona’s city hall since 1372. It was here that the Consell de Cent, a council of 100 notable citizens, met to deal with civic affairs under the watchful eyes of the king. The original entrance can be seen around the left corner of the building, on the carrer de la Ciutat. Inside, the left staircase leads to the upper gallery of the old courtyard and to the Saló de Cent (Hall of the One Hundred). Its high ceiling resembles the barrel-vault of the Saló del Tinell, and was built at about the same time in the 14th century. The red-and-yellow bars of Catalonia’s flag decorate the walls. The hall where the city council now meets adjoins, and at the head of the black marble staircase is the Saló de les Cròniques (Hall of the Chronicles), noted for the modern murals in sepia tones by Josep Maria Sert.
   `
 
-Description
+The above command searches within the entirety of the `written_2/` directory for the key word "chronicles" within it. The command provides the lines in which "chronicles" exists in the files of the directory allowing the user to identify exactly where in each file's text the key word lies.
 
 Running `grep -rw` `in written_2/` using the command
 
@@ -211,7 +211,7 @@ Would return
   written_2/travel_guides/berlitz1/HistoryJapan.txt:        Prehistory and Early Chronicles
   `
 
-Description
+The example command searches within all files titled with "History" within the `written_2/travel_guides/berlitz1/` directory for the key word "chronicles." The command once again provides the lines in which "chronicles" exists in the files with the "History" pattern in the aforementioned directory, allowing the user to precisely narrow down to specific texts which lines the key word lies.
 
 ## grep -rn
 
