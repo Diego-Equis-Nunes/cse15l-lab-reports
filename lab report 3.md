@@ -202,28 +202,30 @@ Description
 
 Running `grep -rw` `in written_2/` using the command
 
-`grep -rw "Chronicles" written_2/`
+`grep -rw "Chronicles" written_2/travel_guides/berlitz1/History*`
 
 Would return 
 
 `
-
+written_2/travel_guides/berlitz1/HistoryJapan.txt:        (“Chronicles of Japan”), the islands of Japan were born of a marriage
+written_2/travel_guides/berlitz1/HistoryJapan.txt:        Prehistory and Early Chronicles
 `
 
 Description
 
 ## grep -rn
 
-The command `grep rn` recursively searches for a targeted word and returns a numbered list of all lines with that word. The `-r` is responsible for the recursion, while the `-n` functions to find the target word, its file and line. Running the command returns the lines of the files with the word in numbered order. The command is written as `grep -rn "<target_word>" <file_path>`. To learn about `grep -rn` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I used as a reference.
+The command `grep rn` recursively searches for a targeted word and returns a numbered list of all lines with that word. The `-r` is responsible for the recursion, while the `-n` functions to find the target word, its files and lines. Running the command returns the lines and line numbers where the target word is found in the file. The command is written as `grep -rn "<target_word>" <file_path>`. To learn about `grep -rn` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I used as a reference.
 
 Running `grep -rn` `in written_2/` using the command
 
-`grep -rn "Chronicles" written_2/`
+`grep -rn "Chronicles" written_2/travel_guides/berlitz1/History*`
 
 Would return 
 
 `
-
+written_2/travel_guides/berlitz1/HistoryJapan.txt:9:        (“Chronicles of Japan”), the islands of Japan were born of a marriage
+written_2/travel_guides/berlitz1/HistoryJapan.txt:23:        Prehistory and Early Chronicles
 `
 
 Description
@@ -235,7 +237,8 @@ Running `grep -rn` `in written_2/` using the command
 Would return 
 
 `
-
+written_2/travel_guides/berlitz1/HistoryJapan.txt:9:        (“Chronicles of Japan”), the islands of Japan were born of a marriage
+written_2/travel_guides/berlitz1/HistoryJapan.txt:23:        Prehistory and Early Chronicles
 `
 
 Description
