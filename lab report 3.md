@@ -42,7 +42,8 @@ describe, what its doing + why its useful
 
 ## grep -rn
 
-The command `grep rn` recursively searches files for a pattern and returns the count of lines with that pattern. The `-r` aspect triggers the recursion, while the `-c` is responsible for listing the count. Running the command returns the count of lines with the target word specified. The command is written as `grep -rc "<target_word>" <file_path>`. To learn directly about `grep -rn` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I referenced.
+The command `grep rn` recursively searches for a targeted word and returns a numbered list of all lines with that word. The `-r` is responsible for the recursion, while the `-n` functions to find the target word, its file and line. Running the command returns the lines of the files with the word in numbered order. The command is written as `grep -rn "<target_word>" <file_path>`. To learn about `grep -rn` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I used as a reference.
+
 code block ex
 
 describe, what its doing + why its useful
