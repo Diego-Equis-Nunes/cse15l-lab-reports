@@ -14,7 +14,19 @@ Running `grep -rl` in written_2/ using the command
 
 Would return
 
-``
+`written_2/travel_guides/berlitz1/IntroDublin.txt
+written_2/travel_guides/berlitz1/IntroLakeDistrict.txt
+written_2/travel_guides/berlitz1/IntroMadeira.txt
+written_2/travel_guides/berlitz1/WhereToIbiza.txt
+written_2/travel_guides/berlitz1/WhereToIsrael.txt
+written_2/travel_guides/berlitz1/WhereToJerusalem.txt
+written_2/travel_guides/berlitz1/WhereToLakeDistrict.txt
+written_2/travel_guides/berlitz1/WhereToMadeira.txt
+written_2/travel_guides/berlitz2/CanaryIslands-WhereToGo.txt
+written_2/travel_guides/berlitz2/China-WhereToGo.txt
+written_2/travel_guides/berlitz2/Costa-WhereToGo.txt
+written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt
+written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt`
 
 describe, what its doing + why its useful
 
