@@ -8,7 +8,13 @@ The command `grep` is used to search for patterns within files using a string to
 
 The command `grep rl` is a quick way to recursively search files for a line. The `-r` aspect does the recursion, while the `-l` is responsible for listing file names. Running the command returns the file with the target word specified. The command is written as `grep -rl "<target_word>" <file_path>` and searches for the target word in the specified file path and returns all files with the word. To read directly about `grep -rl` you can read [this article](https://alvinalexander.com/linux-unix/recursive-grep-r-searching-egrep-find/#:~:text=grep%20%2Drl%20alvin%20.,i%20for%20case%2Dinsensitive%20searches) with all the details.
 
-code block ex
+Running `grep -rl` in written_2/ using the command
+
+`$ grep -rl "vistas" written 2_/`
+
+Would return
+
+``
 
 describe, what its doing + why its useful
 
