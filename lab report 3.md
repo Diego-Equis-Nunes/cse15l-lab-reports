@@ -14,7 +14,7 @@ Running `grep -rl` in `written_2/` using the command
 
 Would return
 
-  `
+ `
   written_2/travel_guides/berlitz1/IntroDublin.txt
   written_2/travel_guides/berlitz1/IntroLakeDistrict.txt
   written_2/travel_guides/berlitz1/IntroMadeira.txt
@@ -28,7 +28,7 @@ Would return
   written_2/travel_guides/berlitz2/Costa-WhereToGo.txt
   written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt
   written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
-  `
+ `
 
 In the example above the command is searching for the word "vistas" in the directory `written_2/` and returns all the files with the word in it. This is useful because it allows the user to check for the existence of specific contents within the entire directory at will. It can be determined if the word or pattern is relevant to any of the information in the entire directory from the command.
 
