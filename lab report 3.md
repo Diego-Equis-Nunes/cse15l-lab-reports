@@ -185,23 +185,58 @@ Description
 
 The command `grep rw` recursively searches for a targeted word and returns all lines with that entire word. The `-r` aspect triggers the recursion, while the `-w` functions to find the target word and the file and line it is in. Running the command returns the files with the word and the lines of text within the files that the word is in. The command is written as `grep -rw "<target_word>" <file_path>`. To learn directly about `grep -rw` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) which I referenced.
 
-code block ex
+Running `grep -rw` `in written_2/` using the command
 
-describe, what its doing + why its useful
+`grep -rw "Chronicles" written_2/`
 
-code block ex
+Would return 
 
-describe, what its doing + why its useful
+`
+written_2/travel_guides/berlitz1/HistoryJapan.txt:        (“Chronicles of Japan”), the islands of Japan were born of a marriage
+written_2/travel_guides/berlitz1/HistoryJapan.txt:        Prehistory and Early Chronicles
+written_2/travel_guides/berlitz1/WhereToGreek.txt:        Parian Chronicles, a history of ancient Greece enscribed on marble
+written_2/travel_guides/berlitz2/Barcelona-WhereToGo.txt:The Ajuntament, or Casa de la Ciutat, across the plaza has held Barcelona’s city hall since 1372. It was here that the Consell de Cent, a council of 100 notable citizens, met to deal with civic affairs under the watchful eyes of the king. The original entrance can be seen around the left corner of the building, on the carrer de la Ciutat. Inside, the left staircase leads to the upper gallery of the old courtyard and to the Saló de Cent (Hall of the One Hundred). Its high ceiling resembles the barrel-vault of the Saló del Tinell, and was built at about the same time in the 14th century. The red-and-yellow bars of Catalonia’s flag decorate the walls. The hall where the city council now meets adjoins, and at the head of the black marble staircase is the Saló de les Cròniques (Hall of the Chronicles), noted for the modern murals in sepia tones by Josep Maria Sert.
+`
+
+Description
+
+Running `grep -rw` `in written_2/` using the command
+
+`grep -rw "Chronicles" written_2/`
+
+Would return 
+
+`
+
+`
+
+Description
 
 ## grep -rn
 
 The command `grep rn` recursively searches for a targeted word and returns a numbered list of all lines with that word. The `-r` is responsible for the recursion, while the `-n` functions to find the target word, its file and line. Running the command returns the lines of the files with the word in numbered order. The command is written as `grep -rn "<target_word>" <file_path>`. To learn about `grep -rn` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I used as a reference.
 
-code block ex
+Running `grep -rn` `in written_2/` using the command
 
-describe, what its doing + why its useful
+`grep -rn "Chronicles" written_2/`
 
-code block ex
+Would return 
 
-describe, what its doing + why its useful
+`
+
+`
+
+Description
+
+Running `grep -rn` `in written_2/` using the command
+
+`grep -rn "Chronicles" written_2/`
+
+Would return 
+
+`
+
+`
+
+Description
 
