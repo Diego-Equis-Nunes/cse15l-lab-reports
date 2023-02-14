@@ -13,6 +13,7 @@ Running `grep -rl` in `written_2/` using the command
 `$ grep -rl "vistas" written 2_/`
 
 Would return
+
   `
   written_2/travel_guides/berlitz1/IntroDublin.txt
   written_2/travel_guides/berlitz1/IntroLakeDistrict.txt
