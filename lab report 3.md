@@ -2,7 +2,7 @@
 
 # Researching Commands
 
-The command `grep` is used to search for patterns within files using a string to print the specified result. This document will be exploring examples of different command line options for the `grep` command to achieve different results. The foled `written_2/` will be searched through using the various `grep` commands present. 
+The command `grep` is used to search for patterns within files using a string to print the specified result. This document will be exploring examples of different command line options for the `grep` command to achieve different results. The folder `written_2/` will be searched through using the various `grep` commands present. 
 
 ## grep -rl
 
@@ -49,7 +49,7 @@ written_2/travel_guides/berlitz1/WhereToLakeDistrict.txt
 written_2/travel_guides/berlitz1/WhereToMadeira.txt
 ```
 
-In this new command the search for the word vista is narrowed into the `berlitz1` directory within travel guides. The command therefore allows the user to search subdirectories for relevant or irrelavant information within it to assess content of specific files rather than the entire directory at once. The command returns whch files within `berlitz` have the word "vista," making the printed output much more manageable and specific to the directory.
+In this new command the search for the word "vista" is narrowed into the `berlitz1` directory within `travel_guides`. The command therefore allows the user to search subdirectories for relevant or irrelavant information within it to assess content of specific files rather than the entire directory at once. The command returns which files within `berlitz` have the word "vista," making the printed output much more manageable and specific to the directory.
 
 ## grep -rc
 
@@ -165,7 +165,7 @@ written_2/travel_guides/berlitz1/WhereToMalaysia.txt:0
 written_2/travel_guides/berlitz1/WhereToMallorca.txt:0
 ```
 
-In the command, the use searches the entire `berlitz1` directory for the word "vistas" and receives a count of "vistas" for every one of its file. The command shows its presence and non-presence in every file making it easy for the user to locate where certain key phrases are and aren't within a specific directory.
+In the command, the user searches the entire `berlitz1` directory for the word "vistas" and receives a count of "vistas" for every one of its file. The command shows its presence and non-presence in every file making it easy for the user to locate where certain key phrases are and aren't within a specific directory.
 
 Running `grep -rc` `in written_2/` using the command
 
@@ -179,11 +179,11 @@ written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt:0
 written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:1
 ```
 
-In the above example, the command searches for "vistas" again but this time searches within a file pattern within the directory `berlitz2`. It allows the user to search within files titled `Vallarta` giving the user much more control over how specific they need to search for the gievn key word. The command gives a count indicating the words presence in every file that matches the pattern and path specified in the command.
+In the above example, the command searches for "vistas" again but this time searches within a file pattern within the directory `berlitz2`. It allows the user to search within files titled `Vallarta` giving the user much more control over how specific they need to search for the given key word. The command gives a count indicating the word's presence in every file that matches the pattern and path specified in the command.
 
 ## grep -rw
 
-The command `grep rw` recursively searches for a targeted word and returns all lines with that entire word. The `-r` aspect triggers the recursion, while the `-w` functions to find the target word and the file and line it is in. Running the command returns the files with the word and the lines of text within the files that the word is in. The command is written as `grep -rw "<target_word>" <file_path>`. To learn directly about `grep -rw` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) which I referenced.
+The command `grep rw` recursively searches for a targeted word and returns all lines with that entire word. The `-r` aspect triggers the recursion, while the `-w` functions to find the target word, file and line it is in. Running the command returns the files with the word and the lines of text, within said files, that the word is in. The command is written as `grep -rw "<target_word>" <file_path>`. To learn directly about `grep -rw` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) which I referenced.
 
 Running `grep -rw` `in written_2/` using the command
 
@@ -211,7 +211,7 @@ written_2/travel_guides/berlitz1/HistoryJapan.txt:        (“Chronicles of Japa
 written_2/travel_guides/berlitz1/HistoryJapan.txt:        Prehistory and Early Chronicles
 ```
 
-The example command searches within all files titled with "History" within the `written_2/travel_guides/berlitz1/` directory for the key word "chronicles." The command once again provides the lines in which "chronicles" exists in the files with the "History" pattern in the aforementioned directory, allowing the user to precisely narrow down to specific texts which lines the key word lies.
+The example command searches within all files titled with `History` within the `written_2/travel_guides/berlitz1/` directory for the key word "chronicles." The command once again provides the lines in which "chronicles" exists in the files with the `History` pattern of the aforementioned directory, allowing the user to precisely narrow down to specific texts which lines the key word lies.
 
 ## grep -rn
 
@@ -228,7 +228,7 @@ written_2/travel_guides/berlitz1/HistoryJapan.txt:9:        (“Chronicles of Ja
 written_2/travel_guides/berlitz1/HistoryJapan.txt:23:        Prehistory and Early Chronicles
 ```
 
-This example command searches the same pattern and directory as the previous `rw` one does. It finds all files titled "History" within the `written_2/travel_guides/berlitz1/` directory for the key word "chronicles." However, since it is usign `rn` the command not only prints the lines in which "chronicles" exists, but also prints exactly what line numbers they exist at. This allows the user to still search specific texts while also obtaining more relevant information on the key word's whereabouts that would increase their search efficiency.
+This example command searches the same pattern and directory as the previous `rw` one does. It finds all files titled `History` within the `written_2/travel_guides/berlitz1/` directory for the key word "chronicles." However, since it is usign `rn` the command not only prints the lines in which "chronicles" exists, but also prints exactly what line numbers they exist at. This allows the user to still search specific texts while also obtaining more relevant information on the key word's whereabouts that would increase their search efficiency.
 
 Running `grep -rn` `in written_2/` using the command
 
@@ -240,4 +240,4 @@ Would return
 written_2/travel_guides/berlitz2/Canada-History.txt:25:With great pioneering skill, Upper Canada’s first lieutenant governor, John Simcoe, pushed new highways north from Lake Ontario and west to Hamilton. He established the provincial capital at a trading post, Toronto, in the heart of a malarial swamp, and renamed it York. A landed gentry made up of army officers, government officials, and commercial speculators ran the province, creating a hereditary aristocracy known as the Family Compact. More Americans were lured over the border with land grants; the population rose from 14,000 in 1792 to 90,000 by 1812. French-Canadians were also multiplying rapidly, from 60,000 when New France was abandoned in 1760 to 330,000 fifty years later.
 ```
 
-This final example command searches the entire `written_2/` directory. It prints out the line number of every line in the entire directory with the phrase "great pioneering skill." This command provides great use because it accesses all information in the directory to provide the pattern's location giving a more wholistic view of the directory. It uses a more complex phrase to search for exemplifying that searches aren't limited to single words or simple patterns and still successfully numbers where the target phrase can by displaying its line number in its file path.
+This final example command searches the entire `written_2/` directory. It prints out the line number of every line in the entire directory with the phrase "great pioneering skill." This command provides great use because it accesses all information in the directory to provide the pattern's location giving a more wholistic view of the directory. It uses a more complex phrase to search for exemplifying that searches aren't limited to single words or simple patterns. All the while it still successfully numbers where the target phrase is by displaying its line number and its file path.
