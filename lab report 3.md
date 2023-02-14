@@ -165,7 +165,7 @@ Would return
   written_2/travel_guides/berlitz1/WhereToMallorca.txt:0
   `
 
-Description
+In the command, the use searches the entire `berlitz1` directory for the word "vistas" and receives a count of "vistas" for every one of its file. The command shows its presence and non-presence in every file making it easy for the user to locate where certain key phrases are and aren't within a specific directory.
 
 Running `grep -rc` `in written_2/` using the command
 
@@ -179,7 +179,7 @@ Would return
   written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:1
   `
 
-Description
+In the above example, the command searches for "vistas" again but this time searches within a file pattern within the directory `berlitz2`. It allows the user to search within files titled `Vallarta` giving the user much more control over how specific they need to search for the gievn key word. The command gives a count indicating the words presence in every file that matches the pattern and path specified in the command.
 
 ## grep -rw
 
