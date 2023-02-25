@@ -13,13 +13,24 @@ In week 7 of lab we were tasked to complete multiple steps to clone, commit and 
 
 ## My Reproduction of Step 1 - Logging in
 
+![Image]()
 
 ## My Reproduction of Step 2 - Cloning
 
+![Image]()
+
 ## My Reproduction of Step 3 - Test Failure
+
+![Image]()
 
 ## My Reproduction of Step 4 - Debugging
 
+![Image]()
+
 ## My Reproduction of Step 5 - Test Success
 
+![Image]()
+
 ## My Reproduction of Step 6 - Commit and Push
+
+![Image]()
