@@ -13,15 +13,15 @@ In week 7 of lab we were tasked to complete multiple steps to clone, commit and 
 
 ## My Reproduction of Step 1 - Logging in
 
-![Image](Step 4 - Log In.png)
+![Image](Step4LogIn.png)
 
 ## My Reproduction of Step 2 - Cloning
 
-![Image](Step 5 - Clone Fork.png)
+![Image](Step5CloneFork.png)
 
 ## My Reproduction of Step 3 - Test Failure
 
-![Image](Step 6 - Tests Fail.png)
+![Image](Step6TestsFail.png)
 
 ## My Reproduction of Step 4 - Debugging
 
@@ -29,8 +29,8 @@ In week 7 of lab we were tasked to complete multiple steps to clone, commit and 
 
 ## My Reproduction of Step 5 - Test Success
 
-![Image](Step 8 - Tests Pass.png)
+![Image](Step8TestsPass.png)
 
 ## My Reproduction of Step 6 - Commit and Push
 
-![Image](Step 9 - Commit and Push.png)
+![Image](Step9CommitPush.png)
