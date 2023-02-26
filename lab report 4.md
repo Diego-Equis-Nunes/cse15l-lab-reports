@@ -27,7 +27,7 @@ The command `ssh cs15lwi23aoj@ieng6.ucsd.edu` was 1st up in my device's search h
 
 Keys Pressed
 * `<up>`
-* * Was pressed 14 times
+  * Was pressed 14 times
 * `<enter>`
 
 Description
@@ -38,8 +38,11 @@ Description
 
 Keys Pressed
 * `<up>`
-* * Was pressed 14 times
+  * Was pressed 11 times
 * `<enter>`
+* `<up>`
+  * Was pressed 11 times
+* `<enter>
 
 Description
 
@@ -65,7 +68,15 @@ Description
 
 Keys Pressed
 * `<up>`
-* `<enter>`
+  * Was pressed 14 times
+* `<enter>
+* `^O`
+* <enter>
+* <down> x42
+* <right> x12
+*<backspace> x1
+<Type 2>
+
 
 Description
 
