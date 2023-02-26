@@ -16,20 +16,20 @@ In week 7 of lab we were tasked to complete multiple steps to clone, commit and 
 ![Image](Step4LogIn.png)
 
 Keys Pressed
-* Key
-* Key
-* Key
 
-Description
+Keys Pressed
+* `<up>`
+* `<enter>`
+
+The command `ssh cs15lwi23aoj@ieng6.ucsd.edu` was 1st up in my device's search history, so I used the up arrow to access it and hit enter to run it. The command itself logged me into my student specific CSE 15L account for the school's servers.
 
 ## My Reproduction of Step 2 - Cloning
 
 ![Image](Step5CloneFork.png)
 
 Keys Pressed
-* Key
-* Key
-* Key
+* `<up>`
+* `<enter>`
 
 Description
 
@@ -38,9 +38,8 @@ Description
 ![Image](Step6TestsFail.png)
 
 Keys Pressed
-* Key
-* Key
-* Key
+* `<up>`
+* `<enter>`
 
 Description
 
@@ -65,9 +64,8 @@ Description
 ![Image](Step7FixedZoom.png)
 
 Keys Pressed
-* Key
-* Key
-* Key
+* `<up>`
+* `<enter>`
 
 Description
 
@@ -77,9 +75,8 @@ Description
 ![Image](Step8TestsPass.png)
 
 Keys Pressed
-* Key
-* Key
-* Key
+* `<up>`
+* `<enter>`
 
 Description
 
@@ -88,8 +85,7 @@ Description
 ![Image](Step9CommitPush.png)
 
 Keys Pressed
-* Key
-* Key
-* Key
+* `<up>`
+* `<enter>`
 
 Description
