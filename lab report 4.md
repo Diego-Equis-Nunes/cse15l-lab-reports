@@ -26,9 +26,23 @@ Description
 
 ![Image](Step5CloneFork.png)
 
+Keys Pressed
+* Key
+* Key
+* Key
+
+Description
+
 ## My Reproduction of Step 3 - Test Failure
 
 ![Image](Step6TestsFail.png)
+
+Keys Pressed
+* Key
+* Key
+* Key
+
+Description
 
 ## My Reproduction of Step 4 - Debugging
 
@@ -50,11 +64,32 @@ Description
 
 ![Image](Step7FixedZoom.png)
 
+Keys Pressed
+* Key
+* Key
+* Key
+
+Description
+
 
 ## My Reproduction of Step 5 - Test Success
 
 ![Image](Step8TestsPass.png)
 
+Keys Pressed
+* Key
+* Key
+* Key
+
+Description
+
 ## My Reproduction of Step 6 - Commit and Push
 
 ![Image](Step9CommitPush.png)
+
+Keys Pressed
+* Key
+* Key
+* Key
+
+Description
