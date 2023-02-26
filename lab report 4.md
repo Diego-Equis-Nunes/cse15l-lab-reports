@@ -1,6 +1,6 @@
 # Lab Report 4
 
-## "Done Quick" Briefing
+## "Done Quick"
 
 In week 7 of lab we were tasked to complete multiple steps to clone, commit and push files of a repository to github as fast as possible. There was a brief section of setup including removal of the need to use our password to log into our CSE 15L accounts, as well as setup for the repository we were going to manipulate. Repository setup consisted of forking the repository into our personal acocunts and making sure any clones of that repository in our IDE were removed. After all setup, we were required to do the following steps, described exactly as they are in [Lab Report 7](https://ucsd-cse15l-w23.github.io/week/week7/), as fast as possible:
 
