@@ -30,7 +30,7 @@ Keys Pressed
   * Was pressed 14 times
 * `<enter>`
 
-Description
+The command `git clone git@github.com:Diego-Equis-Nunes/lab7.git` was 14th up on my account's search history when on the server.
 
 ## My Reproduction of Step 3 - Test Failure
 
