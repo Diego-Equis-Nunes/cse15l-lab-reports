@@ -92,7 +92,7 @@ Keys Pressed
 * `<enter>`
 * `<up>`
   * Was pressed 3 times
-* `<enter>
+* `<enter>`
 
 Description
 
@@ -117,7 +117,7 @@ Keys Pressed
 * `<enter>`
 * `rm -rf lab7`
 * `<enter>`
-*`exit`
+* `exit`
 * `<enter>`
 
 Description
