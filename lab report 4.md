@@ -16,8 +16,6 @@ In week 7 of lab we were tasked to complete multiple steps to clone, commit and 
 ![Image](Step4LogIn.png)
 
 Keys Pressed
-
-Keys Pressed
 * `<up>`
 * `<enter>`
 
