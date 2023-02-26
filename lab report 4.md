@@ -68,7 +68,7 @@ Keys Pressed
 * `<up>`
   * Was pressed 14 times
 * `<enter>`
-* `^O`
+* `<^O>`
 * `<enter>`
 * `<down>`
   * Was pressed 42 times
@@ -76,7 +76,7 @@ Keys Pressed
   * Was pressed 12 times
 * `<backspace>`
 * `2`
-* `^X`
+* `<^X>`
 * `y`
 * `<enter>`
 
