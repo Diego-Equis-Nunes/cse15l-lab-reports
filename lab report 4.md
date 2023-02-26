@@ -27,7 +27,8 @@ The command `ssh cs15lwi23aoj@ieng6.ucsd.edu` was 1st up in my device's search h
 
 Keys Pressed
 * `<up>`
-* `<enter>`
+** Was Pressed 14 Times
+* `<enter>` 
 
 Description
 
