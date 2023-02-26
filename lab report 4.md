@@ -56,11 +56,9 @@ Description
 
 ![Image](Step7UnfixedZoom.png)
 
-
 > Debugged file `ListExamples.java`
 
 ![Image](Step7FixedFull.png)
-
 
 > Fixed code of file `ListExamples.java`
 
@@ -69,7 +67,7 @@ Description
 Keys Pressed
 * `<up>`
   * Was pressed 14 times
-* `<enter>
+* `<enter>`
 * `^O`
 * `<enter>`
 * `<down>`
@@ -82,9 +80,7 @@ Keys Pressed
 * `y`
 * `<enter>`
 
-
 Description
-
 
 ## My Reproduction of Step 5 - Test Success
 
@@ -92,7 +88,11 @@ Description
 
 Keys Pressed
 * `<up>`
+  * Was pressed 3 times
 * `<enter>`
+* `<up>`
+  * Was pressed 3 times
+* `<enter>
 
 Description
 
@@ -102,6 +102,22 @@ Description
 
 Keys Pressed
 * `<up>`
+  * Was pressed 14 times
+* `<enter>`
+* `<up>`
+  * Was pressed 14 times
+* `<enter>`
+* `<up>`
+  * Was pressed 14 times
+* `<enter>`
+* `<up>`
+  * Was pressed 14 times
+* `<enter>`
+* `cd ~`
+* `<enter>`
+* `rm -rf lab7`
+* `<enter>`
+*`exit`
 * `<enter>`
 
 Description
