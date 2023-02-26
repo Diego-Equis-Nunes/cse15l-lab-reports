@@ -22,12 +22,6 @@ Keys Pressed
 
 Description
 
-<mark>Testing</mark>
-
-\textcolor{red}{TestingAgain}
-
-<span style="color: red;">Testing</span>
-
 ## My Reproduction of Step 2 - Cloning
 
 ![Image](Step5CloneFork.png)
