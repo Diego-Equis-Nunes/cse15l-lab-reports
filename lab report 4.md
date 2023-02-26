@@ -25,7 +25,20 @@ In week 7 of lab we were tasked to complete multiple steps to clone, commit and 
 
 ## My Reproduction of Step 4 - Debugging
 
-![Image](Step 7 - .png)
+> Bugged file `ListExamples.java`
+![Image](Step7UnfixedFull.png)
+
+> Error in code of file `ListExamples.java`
+![Image](Step7UnfixedZoom.png)
+
+
+> Debugged file `ListExamples.java`
+![Image](Step7FixedFull.png)
+
+
+> Fixed code of file `ListExamples.java`
+![Image](Step7FixedZoom.png)
+
 
 ## My Reproduction of Step 5 - Test Success
 
