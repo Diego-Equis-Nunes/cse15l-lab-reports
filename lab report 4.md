@@ -42,7 +42,7 @@ Keys Pressed
 * `<enter>`
 * `<up>`
   * Was pressed 11 times
-* `<enter>
+* `<enter>`
 
 Description
 
@@ -71,11 +71,16 @@ Keys Pressed
   * Was pressed 14 times
 * `<enter>
 * `^O`
-* <enter>
-* <down> x42
-* <right> x12
-*<backspace> x1
-<Type 2>
+* `<enter>`
+* `<down>`
+  * Was pressed 42 times
+* `<right>`
+  * Was pressed 12 times
+* `<backspace>`
+* `2`
+* `^X`
+* `y`
+* `<enter>`
 
 
 Description
