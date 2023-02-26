@@ -113,9 +113,9 @@ Keys Pressed
 * `<up>`
   * Was pressed 14 times
 * `<enter>`
-* `cd ~`
+* `cd<space><~>`
 * `<enter>`
-* `rm -rf lab7`
+* `rm<space><->rf<space>lab7`
 * `<enter>`
 * `exit`
 * `<enter>`
