@@ -22,7 +22,7 @@ Keys Pressed
 
 Description
 
-<span style="color:yellow;">`Testing`</span>
+<span style="color: yellow;">`Testing`</span>
 
 ## My Reproduction of Step 2 - Cloning
 
