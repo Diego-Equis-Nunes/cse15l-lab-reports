@@ -213,26 +213,27 @@ written_2/non-fiction/OUP/Abernathy/ch9.txt:The possibility of mass customizatio
 
 The example command searches within all `.txt` files of the `written_2/travel_guides/berlitz1/` directory for the pattern "If a retail customer" as a word. The command provides that you can search for a phrase or even sentence within a file and are not just restricted to single words to find information while using the `-w` command. It shows both the file the phrase was found and the lines it appears in, giving insight as to where in the directory and where in the file the specific information someone is looking for resides.
 
-## grep -rn
+## grep -n
 
-The command `grep rn` recursively searches for a targeted word and returns a numbered list of all lines with that word. The `-r` is responsible for the recursion, while the `-n` functions to find the target word, its files and lines. Running the command returns the lines and line numbers where the target word is found in the file. The command is written as `grep -rn "<target_word>" <file_path>`. To learn about `grep -rn` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I used as a reference.
+The command `grep -n` recursively searches for a targeted word and returns a numbered list of all lines with that word. The `-n` functions to find the target word, its lines, while file pathing specifies the file or files to search that information for. Running the command returns the lines and line numbers where the target word is found in the file. The command is written as `grep -n "<target_word>" <file_path>`. To learn about `grep -n` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I used as a reference.
 
-Running `grep -rn` in `written_2/` using the command
+Running `grep -n` in `written_2/` using the command
 
-`$ grep -rn "Chronicles" written_2/travel_guides/berlitz1/History*`
+`$ grep -n "Chronicles" written_2/travel_guides/berlitz1/*.txt`
 
 Would return 
 
 ```
 written_2/travel_guides/berlitz1/HistoryJapan.txt:9:        (“Chronicles of Japan”), the islands of Japan were born of a marriage
 written_2/travel_guides/berlitz1/HistoryJapan.txt:23:        Prehistory and Early Chronicles
+written_2/travel_guides/berlitz1/WhereToGreek.txt:352:        Parian Chronicles, a history of ancient Greece enscribed on marble
 ```
 
-This example command searches the same pattern and directory as the previous `w` one does. It finds all files titled `History` within the `written_2/travel_guides/berlitz1/` directory for the key word "chronicles." However, since it is usign `rn` the command not only prints the lines in which "chronicles" exists, but also prints exactly what line numbers they exist at. This allows the user to still search specific texts while also obtaining more relevant information on the key word's whereabouts that would increase their search efficiency.
+This example command searches similarily how the `-w` one does. Due to the file pathing, it finds all `.txt` files within the `written_2/travel_guides/berlitz1/` directory for the key word "Chronicles." However, since it is using `-n` the command not only prints the lines in which "Chronicles" exists, but also prints exactly what line numbers they exist at. This allows the user to still search specific texts while also obtaining more relevant information on the key word's whereabouts that would increase their search efficiency.
 
-Running `grep -rn` in `written_2/` using the command
+Running `grep -n` in `written_2/` using the command
 
-`$ grep -rn "great pioneering skill" written_2/`
+`$ grep -n "great pioneering skill" written_2/travel_guides/berlitz2/*.txt`
 
 Would return 
 
@@ -240,4 +241,4 @@ Would return
 written_2/travel_guides/berlitz2/Canada-History.txt:25:With great pioneering skill, Upper Canada’s first lieutenant governor, John Simcoe, pushed new highways north from Lake Ontario and west to Hamilton. He established the provincial capital at a trading post, Toronto, in the heart of a malarial swamp, and renamed it York. A landed gentry made up of army officers, government officials, and commercial speculators ran the province, creating a hereditary aristocracy known as the Family Compact. More Americans were lured over the border with land grants; the population rose from 14,000 in 1792 to 90,000 by 1812. French-Canadians were also multiplying rapidly, from 60,000 when New France was abandoned in 1760 to 330,000 fifty years later.
 ```
 
-This final example command searches the entire `written_2/` directory. It prints out the line number of every line in the entire directory with the phrase "great pioneering skill." This command provides great use because it accesses all information in the directory to provide the pattern's location giving a more wholistic view of the directory. It uses a more complex phrase to search for exemplifying that searches aren't limited to single words or simple patterns. All the while it still successfully numbers where the target phrase is by displaying its line number and its file path.
+This final example command searches the entire `written_2/travel_guides/berlitz2/*.txt` directory for `.txt` files. It prints out the line number of every line in the entire directory with the phrase "great pioneering skill." This command is great because showcases much like `-w` that a pattern in `-n` isn't limited to a single word, but can be used to find sentences or phrases as well. It accesses all information on `.txt` files in the specified directory to provide the pattern's location and line number, as well as the filepath it was accessed from to creat easy access to it whereabouts.
