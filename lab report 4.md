@@ -80,7 +80,7 @@ Keys Pressed
 * `y`
 * `<enter>`
 
-Description
+The command `nano ListExamples.java` was 14th up on my account's search history when on the server, so I used the up arrow to access it and hit enter to run it. Running this command allowed a visual representation of the file `ListExamples.java` that I specified, with multiple different options on how to interact with it present on the terminal. For example, I hit `^O` as the terminal showed and hit enter to be able to directly edit the file's text. I then used the down arrow 42 times and the right arrow 12 times to reach the error in the code of `ListExamples.java` that previously failed the JUnit tests. As shown in the images, the code in the file was iterating `index1` instead of `index2` in the for loop meant to iterate `index2`. As a result, once I was on the character `1` of `index1` to `index2` by pressing `<backspace>` to delete `1` and then pressed `2` to replace it.
 
 ## My Reproduction of Step 5 - Test Success
 
