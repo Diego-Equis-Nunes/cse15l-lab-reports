@@ -32,7 +32,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
 
 In the example above the command is searching for the word "vistas" in the directory `written_2/` and returns all the files with the word in it. This is useful because it allows the user to check for the existence of specific contents within the entire directory at will. Since we are using `grep -rl` instead of `grep -l` this is possible because the recursive aspect of the command allows us to search a directory and allow the recursion to locate `.txt` files without the user needing to specify the file path to each `.txt` shown in the results. It can be determined if the word or pattern is relevant to any of the information in the entire directory from the single command.
 
-Running `grep -rl` `in written_2/` using the command
+Running `grep -rl` in `written_2/` using the command
 
 `$ grep -rl "vistas" written 2_/travel_guides/berlitz1`
 
@@ -55,7 +55,7 @@ In this new command the search for the word "vista" is narrowed into the `berlit
 
 The command `grep -rc` recursively searches files for a pattern and returns the count of lines with that pattern. The `-r` aspect triggers the recursion, which works exactly as desribed in the explanation for `grep -rl` as shown above, while the `-c` is responsible for listing the count. Running the command returns the count of lines with the target word specified. The command is written as `grep -rc "<target_word>" <file_path>`. To learn directly about `grep -rc` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I referenced.
 
-Running `grep -rc` `in written_2/` using the command
+Running `grep -rc` in `written_2/` using the command
 
 `$ grep -rc "vistas" written_2/travel_guides/berlitz1`
 
@@ -167,7 +167,7 @@ written_2/travel_guides/berlitz1/WhereToMallorca.txt:0
 
 In the command, the user searches the entire `berlitz1` directory for the word "vistas" and receives a count of "vistas" for every one of its file. The command shows its presence and non-presence in every file making it easy for the user to locate where certain key phrases are and aren't within a specific directory.
 
-Running `grep -rc` `in written_2/` using the command
+Running `grep -rc` in `written_2/` using the command
 
 `$ grep -rc "vistas" written_2/travel_guides/berlitz2/Vallarta*`
 
@@ -181,13 +181,13 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:1
 
 In the above example, the command searches for "vistas" again but this time searches within a file pattern within the directory `berlitz2`. It allows the user to search within files titled `Vallarta` giving the user much more control over how specific they need to search for the given key word. The command gives a count indicating the word's presence in every file that matches the pattern and path specified in the command.
 
-## grep -rw
+## grep -w
 
-The command `grep -rw` recursively searches for a targeted word and returns all lines with that entire word. The `-r` aspect triggers the recursion while the `-w` functions to find the target word, file and line it is in. Running the command returns the files with the word and the lines of text, within said files, that the word is in. The command is written as `grep -rw "<target_word>" <file_path>`. To learn directly about `grep -rw` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) which I referenced.
+The command `grep -w` searches for a targeted word, returns the files with it and returns all lines of those files with that entire word. The `-w` functions to find the target word and line the keyword is in, while the file pathing specified indicates which files it should search for that information. Running the command returns the files with the word and the lines of text, within said files, that the word is in. The command is written as `grep -w "<target_word>" <file_path>`. To learn directly about `grep -w` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) which I referenced.
 
-Running `grep -rw` `in written_2/` using the command
+Running `grep -w` in `written_2/travel_guides/berlitz1/*.txt` using the command
 
-`$ grep -rw "Chronicles" written_2/`
+`$ grep -rw "Chronicles" written_2/travel_guides/berlitz1/*.txt`
 
 Would return 
 
@@ -198,9 +198,9 @@ written_2/travel_guides/berlitz1/WhereToGreek.txt:        Parian Chronicles, a h
 written_2/travel_guides/berlitz2/Barcelona-WhereToGo.txt:The Ajuntament, or Casa de la Ciutat, across the plaza has held Barcelona’s city hall since 1372. It was here that the Consell de Cent, a council of 100 notable citizens, met to deal with civic affairs under the watchful eyes of the king. The original entrance can be seen around the left corner of the building, on the carrer de la Ciutat. Inside, the left staircase leads to the upper gallery of the old courtyard and to the Saló de Cent (Hall of the One Hundred). Its high ceiling resembles the barrel-vault of the Saló del Tinell, and was built at about the same time in the 14th century. The red-and-yellow bars of Catalonia’s flag decorate the walls. The hall where the city council now meets adjoins, and at the head of the black marble staircase is the Saló de les Cròniques (Hall of the Chronicles), noted for the modern murals in sepia tones by Josep Maria Sert.
 ```
 
-The above command searches within the entirety of the `written_2/` directory for the key word "chronicles" within it. The command provides the lines in which "chronicles" exists in the files of the directory allowing the user to identify exactly where in each file's text the key word lies.
+The above command searches within the entirety of the `written_2/` directory for the key word "Chronicles" within it. The command provides the lines in which "Chronicles" exists in the files of the directory allowing the user to identify exactly where in each file's text the key word lies.
 
-Running `grep -rw` `in written_2/` using the command
+Running `grep -rw` in `written_2/` using the command
 
 `$ grep -rw "Chronicles" written_2/travel_guides/berlitz1/History*`
 
@@ -217,7 +217,7 @@ The example command searches within all files titled with `History` within the `
 
 The command `grep rn` recursively searches for a targeted word and returns a numbered list of all lines with that word. The `-r` is responsible for the recursion, while the `-n` functions to find the target word, its files and lines. Running the command returns the lines and line numbers where the target word is found in the file. The command is written as `grep -rn "<target_word>" <file_path>`. To learn about `grep -rn` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I used as a reference.
 
-Running `grep -rn` `in written_2/` using the command
+Running `grep -rn` in `written_2/` using the command
 
 `$ grep -rn "Chronicles" written_2/travel_guides/berlitz1/History*`
 
@@ -230,7 +230,7 @@ written_2/travel_guides/berlitz1/HistoryJapan.txt:23:        Prehistory and Earl
 
 This example command searches the same pattern and directory as the previous `rw` one does. It finds all files titled `History` within the `written_2/travel_guides/berlitz1/` directory for the key word "chronicles." However, since it is usign `rn` the command not only prints the lines in which "chronicles" exists, but also prints exactly what line numbers they exist at. This allows the user to still search specific texts while also obtaining more relevant information on the key word's whereabouts that would increase their search efficiency.
 
-Running `grep -rn` `in written_2/` using the command
+Running `grep -rn` in `written_2/` using the command
 
 `$ grep -rn "great pioneering skill" written_2/`
 
