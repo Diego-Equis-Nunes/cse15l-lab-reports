@@ -185,9 +185,9 @@ In the above example, the command searches for "vistas" again but this time sear
 
 The command `grep -w` searches for a targeted word, returns the files with it and returns all lines of those files with that entire word. The `-w` functions to find the target word and line the keyword is in, while the file pathing specified indicates which files it should search for that information. Running the command returns the files with the word and the lines of text, within said files, that the word is in. The command is written as `grep -w "<target_word>" <file_path>`. To learn directly about `grep -w` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) which I referenced.
 
-Running `grep -w` in `written_2/travel_guides/berlitz1/*.txt` using the command
+Running `grep -w` in `written_2/` using the command
 
-`$ grep -rw "Chronicles" written_2/travel_guides/berlitz1/*.txt`
+`$ grep -w "Chronicles" written_2/travel_guides/berlitz1/*.txt`
 
 Would return 
 
@@ -198,20 +198,20 @@ written_2/travel_guides/berlitz1/WhereToGreek.txt:        Parian Chronicles, a h
 written_2/travel_guides/berlitz2/Barcelona-WhereToGo.txt:The Ajuntament, or Casa de la Ciutat, across the plaza has held Barcelona’s city hall since 1372. It was here that the Consell de Cent, a council of 100 notable citizens, met to deal with civic affairs under the watchful eyes of the king. The original entrance can be seen around the left corner of the building, on the carrer de la Ciutat. Inside, the left staircase leads to the upper gallery of the old courtyard and to the Saló de Cent (Hall of the One Hundred). Its high ceiling resembles the barrel-vault of the Saló del Tinell, and was built at about the same time in the 14th century. The red-and-yellow bars of Catalonia’s flag decorate the walls. The hall where the city council now meets adjoins, and at the head of the black marble staircase is the Saló de les Cròniques (Hall of the Chronicles), noted for the modern murals in sepia tones by Josep Maria Sert.
 ```
 
-The above command searches within the entirety of the `written_2/` directory for the key word "Chronicles" within it. The command provides the lines in which "Chronicles" exists in the files of the directory allowing the user to identify exactly where in each file's text the key word lies.
+The above command searches within the entirety of the `written_2/travel_guides/berlitz1/` directory in its `.txt` files for a the pattern "Chronicles" if it is matched as a whole word. The command provides the lines in which "Chronicles" exists in the files of the directory, allowing the user to identify exactly where in each file's text the key word lies. This gives meaningful insight to the contents of a file as well as where information is stored about a particular pattern within a directory.
 
-Running `grep -rw` in `written_2/` using the command
+Running `grep -w` in `written_2/` using the command
 
-`$ grep -rw "Chronicles" written_2/travel_guides/berlitz1/History*`
+`$ grep -w "If a retail customer" written_2/non-fiction/OUP/Abernathy/*.txt`
 
 Would return 
 
 ```
-written_2/travel_guides/berlitz1/HistoryJapan.txt:        (“Chronicles of Japan”), the islands of Japan were born of a marriage
-written_2/travel_guides/berlitz1/HistoryJapan.txt:        Prehistory and Early Chronicles
+
+written_2/non-fiction/OUP/Abernathy/ch9.txt:The possibility of mass customization for some apparel items presents another market opportunity that demands short-cycle production. If a retail customer pays a premium for a custom pair of jeans, dress shirt, or suit, that customer will expect the item to be delivered to her home within days, not weeks or months. We are a nation of last-minute shoppers, and mass customization will have to compete against overnight delivery of apparel items with less than perfect fit from a specialty catalog company. Speed of delivery has increasingly become part of the competitive equation.
 ```
 
-The example command searches within all files titled with `History` within the `written_2/travel_guides/berlitz1/` directory for the key word "chronicles." The command once again provides the lines in which "chronicles" exists in the files with the `History` pattern of the aforementioned directory, allowing the user to precisely narrow down to specific texts which lines the key word lies.
+The example command searches within all `.txt` files of the `written_2/travel_guides/berlitz1/` directory for the pattern "If a retail customer" as a word. The command provides that you can search for a phrase or even sentence within a file and are not just restricted to single words to find information while using the `-w` command. It shows both the file the phrase was found and the lines it appears in, giving insight as to where in the directory and where in the file the specific information someone is looking for resides.
 
 ## grep -rn
 
@@ -228,7 +228,7 @@ written_2/travel_guides/berlitz1/HistoryJapan.txt:9:        (“Chronicles of Ja
 written_2/travel_guides/berlitz1/HistoryJapan.txt:23:        Prehistory and Early Chronicles
 ```
 
-This example command searches the same pattern and directory as the previous `rw` one does. It finds all files titled `History` within the `written_2/travel_guides/berlitz1/` directory for the key word "chronicles." However, since it is usign `rn` the command not only prints the lines in which "chronicles" exists, but also prints exactly what line numbers they exist at. This allows the user to still search specific texts while also obtaining more relevant information on the key word's whereabouts that would increase their search efficiency.
+This example command searches the same pattern and directory as the previous `w` one does. It finds all files titled `History` within the `written_2/travel_guides/berlitz1/` directory for the key word "chronicles." However, since it is usign `rn` the command not only prints the lines in which "chronicles" exists, but also prints exactly what line numbers they exist at. This allows the user to still search specific texts while also obtaining more relevant information on the key word's whereabouts that would increase their search efficiency.
 
 Running `grep -rn` in `written_2/` using the command
 
