@@ -94,7 +94,7 @@ Keys Pressed
   * Was pressed 3 times
 * `<enter>`
 
-Description
+After previously running the command `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` it was only 3rd up on my account's search history on the server when I used the up arrow to access it. After hitting enter to run it and compile all java files my CSE 15L account has on the `ieng6` server, I used the up arrow 3 times to access the command `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` since it was 3rd in my history after using the previous command. I hit enter to run it, causing the file `ListExamplesTests.java` that I specified in the command to be run. This file hade JUnit tests for the file `ListExamples.java` I recently debugged and showed that all of the tests now passed.
 
 ## My Reproduction of Step 6 - Commit and Push
 
