@@ -53,7 +53,7 @@ In this new command the search for the word "vista" is narrowed into the `berlit
 
 ## grep -rc
 
-The command `grep -rc` recursively searches files for a pattern and returns the count of lines with that pattern. The `-r` aspect triggers the recursion, while the `-c` is responsible for listing the count. Running the command returns the count of lines with the target word specified. The command is written as `grep -rc "<target_word>" <file_path>`. To learn directly about `grep -rc` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I referenced.
+The command `grep -rc` recursively searches files for a pattern and returns the count of lines with that pattern. The `-r` aspect triggers the recursion, which works exactly as desribed in the explanation for `grep -rl` as shown above, while the `-c` is responsible for listing the count. Running the command returns the count of lines with the target word specified. The command is written as `grep -rc "<target_word>" <file_path>`. To learn directly about `grep -rc` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I referenced.
 
 Running `grep -rc` `in written_2/` using the command
 
@@ -183,7 +183,7 @@ In the above example, the command searches for "vistas" again but this time sear
 
 ## grep -rw
 
-The command `grep -rw` recursively searches for a targeted word and returns all lines with that entire word. The `-r` aspect triggers the recursion, which works exactly as desribed in the explanation for `grep -rl` as shown above, while the `-w` functions to find the target word, file and line it is in. Running the command returns the files with the word and the lines of text, within said files, that the word is in. The command is written as `grep -rw "<target_word>" <file_path>`. To learn directly about `grep -rw` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) which I referenced.
+The command `grep -rw` recursively searches for a targeted word and returns all lines with that entire word. The `-r` aspect triggers the recursion while the `-w` functions to find the target word, file and line it is in. Running the command returns the files with the word and the lines of text, within said files, that the word is in. The command is written as `grep -rw "<target_word>" <file_path>`. To learn directly about `grep -rw` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) which I referenced.
 
 Running `grep -rw` `in written_2/` using the command
 
