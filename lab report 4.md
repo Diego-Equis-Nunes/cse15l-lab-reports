@@ -37,14 +37,17 @@ The command `git clone git@github.com:Diego-Equis-Nunes/lab7.git` was 14th up on
 ![Image](Step6TestsFail.png)
 
 Keys Pressed
-* `<up>`
+
+*  `cd<space>lab7`
+*  `<enter>`
+*  `<up>`
   * Was pressed 11 times
 * `<enter>`
 * `<up>`
   * Was pressed 11 times
 * `<enter>`
 
-The command `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` was 11th up on my account's search history when on the server, so I used the up arrow to access it and hit `<enter>` to run it. Running this command compiled all java files my CSE 15L account has on the `ieng6` server. Right after, I used the up arrow 11 times to access the command `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` that was 11th in my history after using the previous command. I used `<enter>` to run it, which caused the file I specified in the command `ListExamplesTests.java` to be run. This file hade JUnit tests for the file that tested the file `ListExamples.java` and showed that one of the tests failed.
+To run the proper JUnit tests on the proper java file, I had to change into the `lab7` directory I created from the forked repository I used during the setup phase. I typed the characters `cd`, `<space>` and `lab7` consecutively then hit `<enter>` to change directories into `lab7`. After doing so, I was in the right directory to start running tests. The command `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` was 11th up on my account's search history when on the server, so I used the up arrow to access it and hit `<enter>` to run it. Running this command compiled all java files my CSE 15L account has on the `ieng6` server. Right after, I used the up arrow 11 times to access the command `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` that was 11th in my history after using the previous command. I used `<enter>` to run it, which caused the file I specified in the command `ListExamplesTests.java` to be run. This file hade JUnit tests for the file that tested the file `ListExamples.java` and showed that one of the tests failed.
 
 ## My Reproduction of Step 4 - Debugging
 
@@ -120,4 +123,4 @@ Keys Pressed
 * `exit`
 * `<enter>`
 
-Finally, I began the set of commands I needed to commit and push my changes to my Github repository. I hit the up arrow 14 times to access the 14th command in my account's history, which was `git add ListExamplesTests.java ListExamples.java`. I hit `<enter>` so that this command added the files `ListExamplesTests.java` and `ListExamples.java` to the files I wanted to commit to the Github.
+Finally, I began the set of commands I needed to commit and push my changes to my Github repository. I hit the up arrow 14 times to access the 14th command in my account's history, which was `git add ListExamplesTests.java ListExamples.java`. I hit `<enter>` so that this command added the files `ListExamplesTests.java` and `ListExamples.java` to the files I wanted to commit to the Github. After, I hit the up arrow 14 more times to access the now 14th command in the history, which was the command following the previous one before I reused it. This command was `git commit -m "Done"` and after hitting `<enter>` it added the message "Done" as the message to be committed once I push all changes to Github. To actually commit the changes to Github, I used the up arrow 14 times to access the command `git commit` and hit `<enter>` to run it. Once I successfully committed the changes, I pushed them to my Github repository by using the up arrow 14 times 
