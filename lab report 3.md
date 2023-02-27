@@ -165,7 +165,7 @@ written_2/travel_guides/berlitz1/WhereToMalaysia.txt:0
 written_2/travel_guides/berlitz1/WhereToMallorca.txt:0
 ```
 
-In the command, the user searches the entire `berlitz1` directory for the word "vistas" and receives a count of "vistas" for every one of its file. The command shows its presence and non-presence in every file making it easy for the user to locate where certain key phrases are and aren't within a specific directory.
+In the command, the user searches the entire `berlitz1` directory for the word "vistas" and receives a count of "vistas" for every one of its file. The command shows its presence and non-presence in every file making it easy for the user to locate where certain key phrases are and aren't within a specific directory. It's especially helpful to add the recursive aspect to this command because otherwise, using `grep -c` alone would require a filepath to a directory with `.txt` files within it. By adding `grep -r` into the mix, we are able to search an entire directory because the recursion identifies the filepaths to each `.txt` file for us. Regardless of the approach, it is the `grep -c` aspect that takes the file path given and displays the amount of times the pattern specified is matched within the file. 
 
 Running `grep -rc` in `written_2/` using the command
 
@@ -179,7 +179,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt:0
 written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:1
 ```
 
-In the above example, the command searches for "vistas" again but this time searches within a file pattern within the directory `berlitz2`. It allows the user to search within files titled `Vallarta` giving the user much more control over how specific they need to search for the given key word. The command gives a count indicating the word's presence in every file that matches the pattern and path specified in the command.
+In the above example, the command searches for "vistas" again but this time searches within a file pattern within the directory `berlitz2`. It allows the user to search within files titled `Vallarta` giving the user much more control over how specific they need to search for the given key word. The command gives a count indicating the word's presence in every file that matches the pattern and path specified in the command. In this example, `grep -rc` and `grep -c` don't differ much in effectiveness because the user has a specific path they need to gather information from. However, it does show that `grep -rc` still has the capability to be as specific as seraching a specific single directory path leading directly to `.txt` files on top of being able to search entire directories without detailed specification of file location. Regardless of the approach, it is still the `grep -c` aspect taking the given file path and searching for the count of the specified pattern within the files.
 
 ## grep -w
 
