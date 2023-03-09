@@ -6,7 +6,7 @@ The command `find` is used to list files and directories in the directory path t
 
 ## find -print
 
-The command `grep -rl` is a quick way to recursively search files for a line. The `-r` aspect does the recursion, while the `-l` is responsible for listing file names. The function of recursion is to call on itself to work through different lists of files or directories. So when `grep -rl` is run, the recursive aspect is that the command would call itself on the specified directory and within that call itself again to look at any directory or file within it. Those calls then call themselves again to search driectories and files within them, so on and so forth. As a result, running the command returns all files with the target word specified. It is different from `grep -l` because without the recursive aspect, `grep -l` needs a file path to a directory with files in it to run properly. Using `grep -l` explores the file path to files specified, while `grep -rl` can be used on a directory to iterate through everything in it to find a specific pattern in a broader scope of files at one time.  The command is written as `grep -rl "<target_word>" <file_path>` and searches for the target word in the specified file path and returns all files with the word. To read directly about `grep -rl` you can read [this article](https://alvinalexander.com/linux-unix/recursive-grep-r-searching-egrep-find/#:~:text=grep%20%2Drl%20alvin%20.,i%20for%20case%2Dinsensitive%20searches) with all the details.
+The command `grep -rl` is a quick way to recursively search files for a line. The `-r` aspect does the recursion, while the `-l` is responsible for listing file names. The function of recursion is to call on itself to work through different lists of files or directories. So when `grep -rl` is run, the recursive aspect is that the command would call itself on the specified directory and within that call itself again to look at any directory or file within it. Those calls then call themselves again to search driectories and files within them, so on and so forth. As a result, running the command returns all files with the target word specified. It is different from `grep -l` because without the recursive aspect, `grep -l` needs a file path to a directory with files in it to run properly. Using `grep -l` explores the file path to files specified, while `grep -rl` can be used on a directory to iterate through everything in it to find a specific pattern in a broader scope of files at one time.  The command is written as `grep -rl "<target_word>" <file_path>` and searches for the target word in the specified file path and returns all files with the word. To read directly about `grep -rl` you can read [this article](https://phoenixnap.com/kb/less-command-in-linux) with all the details.
 
 Running `grep -rl` in `written_2/` using the command
 
@@ -53,7 +53,7 @@ In this new command the search for the word "vista" is narrowed into the `berlit
 
 ## grep -rc
 
-The command `grep -rc` recursively searches files for a pattern and returns the count of lines with that pattern. The `-r` aspect triggers the recursion, which works exactly as desribed in the explanation for `grep -rl` as shown above, while the `-c` is responsible for listing the count. Running the command returns the count of lines with the target word specified. The command is written as `grep -rc "<target_word>" <file_path>`. To learn directly about `grep -rc` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I referenced.
+The command `grep -rc` recursively searches files for a pattern and returns the count of lines with that pattern. The `-r` aspect triggers the recursion, which works exactly as desribed in the explanation for `grep -rl` as shown above, while the `-c` is responsible for listing the count. Running the command returns the count of lines with the target word specified. The command is written as `grep -rc "<target_word>" <file_path>`. To learn directly about `grep -rc` you can read [this source](https://phoenixnap.com/kb/less-command-in-linux/) that I referenced.
 
 Running `grep -rc` in `written_2/` using the command
 
@@ -183,7 +183,7 @@ In the above example, the command searches for "vistas" again but this time sear
 
 ## grep -w
 
-The command `grep -w` searches for a targeted word, returns the files with it and returns all lines of those files with that entire word. The `-w` functions to find the target word and line the keyword is in, while the file pathing specified indicates which files it should search for that information. Running the command returns the files with the word and the lines of text, within said files, that the word is in. The command is written as `grep -w "<target_word>" <file_path>`. To learn directly about `grep -w` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) which I referenced.
+The command `grep -w` searches for a targeted word, returns the files with it and returns all lines of those files with that entire word. The `-w` functions to find the target word and line the keyword is in, while the file pathing specified indicates which files it should search for that information. Running the command returns the files with the word and the lines of text, within said files, that the word is in. The command is written as `grep -w "<target_word>" <file_path>`. To learn directly about `grep -w` you can read [this source](https://phoenixnap.com/kb/less-command-in-linux) which I referenced.
 
 Running `grep -w` in `written_2/` using the command
 
@@ -215,7 +215,7 @@ The example command searches within all `.txt` files of the `written_2/travel_gu
 
 ## grep -n
 
-The command `grep -n` recursively searches for a targeted word and returns a numbered list of all lines with that word. The `-n` functions to find the target word, its lines, while file pathing specifies the file or files to search that information for. Running the command returns the lines and line numbers where the target word is found in the file. The command is written as `grep -n "<target_word>" <file_path>`. To learn about `grep -n` you can read [this source](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) that I used as a reference.
+The command `grep -n` recursively searches for a targeted word and returns a numbered list of all lines with that word. The `-n` functions to find the target word, its lines, while file pathing specifies the file or files to search that information for. Running the command returns the lines and line numbers where the target word is found in the file. The command is written as `grep -n "<target_word>" <file_path>`. To learn about `grep -n` you can read [this source](https://phoenixnap.com/kb/less-command-in-linux) that I used as a reference.
 
 Running `grep -n` in `written_2/` using the command
 
