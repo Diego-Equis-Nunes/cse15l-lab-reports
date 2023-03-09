@@ -4,7 +4,7 @@
 
 The command `find` is used to list files and directories in the directory path that is taken as an argument. This document will be exploring examples of different command line options for the `find` command to achieve different results. The folder `written_2/` will be searched through using the various `find` commands present. 
 
-## grep -rl
+## find -print
 
 The command `grep -rl` is a quick way to recursively search files for a line. The `-r` aspect does the recursion, while the `-l` is responsible for listing file names. The function of recursion is to call on itself to work through different lists of files or directories. So when `grep -rl` is run, the recursive aspect is that the command would call itself on the specified directory and within that call itself again to look at any directory or file within it. Those calls then call themselves again to search driectories and files within them, so on and so forth. As a result, running the command returns all files with the target word specified. It is different from `grep -l` because without the recursive aspect, `grep -l` needs a file path to a directory with files in it to run properly. Using `grep -l` explores the file path to files specified, while `grep -rl` can be used on a directory to iterate through everything in it to find a specific pattern in a broader scope of files at one time.  The command is written as `grep -rl "<target_word>" <file_path>` and searches for the target word in the specified file path and returns all files with the word. To read directly about `grep -rl` you can read [this article](https://alvinalexander.com/linux-unix/recursive-grep-r-searching-egrep-find/#:~:text=grep%20%2Drl%20alvin%20.,i%20for%20case%2Dinsensitive%20searches) with all the details.
 
