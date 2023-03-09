@@ -2,7 +2,7 @@
 
 # Researching Commands Once Again
 
-The command `find` is used to search for patterns within files using a string to print the specified result. This document will be exploring examples of different command line options for the `grep` command to achieve different results. The folder `written_2/` will be searched through using the various `grep` commands present. 
+The command `find` is used to list files and directories in the directory path that is taken as an argument. This document will be exploring examples of different command line options for the `find` command to achieve different results. The folder `written_2/` will be searched through using the various `find` commands present. 
 
 ## grep -rl
 
