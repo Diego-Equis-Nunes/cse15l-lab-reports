@@ -2,7 +2,7 @@
 
 # Researching Commands Once Again
 
-The command `find` is used to list files and directories in the directory path that is taken as an argument. This document will be exploring examples of different command line options for the `find` command to achieve different results. The folder `written_2/` will be searched through using the various `find` commands present. 
+The command `less` is used to alter terminal display and interation by causing the terminal to show the first screen of lines that would be (Week 4 for Reference.). This document will be exploring examples of different command line options for the `find` command to achieve different results. The folder `written_2/` will be searched through using the various `find` commands present. 
 
 ## less
 
