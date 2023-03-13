@@ -185,7 +185,7 @@ The above command searches within the`written_2/travel_guides/berlitz1/HandRHong
 
 The command `less -M` allows parsing of the specified file, but provides more information about each line as they are being parsed. It provides the file path of the file being parsed, the line numbers being shown and the percentage of the file that has been shown by the command at the line the user is at. The command is written as `less -M <file_path>`. To learn about `less -M` you can read [this source](https://phoenixnap.com/kb/less-command-in-linux) that I used as a reference.
 
-Running `less -N` in `written_2/` using the command
+Running `less -M` in `written_2/` using the command
 
 `$ less -M written_2/travel_guides/berlitz1/HandRHongKong.txt`
 
@@ -205,17 +205,31 @@ Would return
 written_2/travel_guides/berlitz1/HandRHongKong.txt lines 1-15/29 54%
 ```
 
-This example command searches similarily how the `-w` one does. Due to the file pathing, it finds all `.txt` files within the `written_2/travel_guides/berlitz1/` directory for the key word "Chronicles." However, since it is using `-n` the command not only prints the lines in which "Chronicles" exists, but also prints exactly what line numbers they exist at. This allows the user to still search specific texts while also obtaining more relevant information on the key word's whereabouts that would increase their search efficiency.
+This example command shows how the command provides the normal `less` functionality while providing crucial information at the end of the terminal that updates in real time as the user parses through the file. It shows the user where in the file they are at with line numbers, how much of they file they have explored or have left with the percentage of file covered indicator as well as reminding them what file they are parsing by displaying its full path in the terminal. It is useful to help the user keep track of what they are parsing, where they are parsing and how much of it they have parsed at the line they are at during any given time.
 
-Running `less -N` in `written_2/` using the command
+Running `less -M` in `written_2/` using the command
 
-`$ grep -n "great pioneering skill" written_2/travel_guides/berlitz2/*.txt`
+`$ less -M written_2/travel_guides/berlitz1/HandRHongKong.txt`
 
-Would return 
+Would return, after parsing one less than as far down as possible using the down arrow,
 
 ```
-written_2/travel_guides/berlitz2/Canada-History.txt:25:With great pioneering skill, Upper Canada’s first lieutenant governor, John Simcoe, pushed new highways north from Lake Ontario and west to Hamilton. He established the provincial capital at a trading post, Toronto, in the heart of a malarial swamp, and renamed it York. A landed gentry made up of army officers, government officials, and commercial speculators ran the province, creating a hereditary aristocracy known as the Family Compact. More Americans were lured over the border with land grants; the population rose from 14,000 in 1792 to 90,000 by 1812. French-Canadians were also multiplying rapidly, from 60,000 when New France was abandoned in 1760 to 330,000 fifty years later.
+        Breakfast included. 11 rooms.
+        Lodge at Koele $$$$ P.O. Box 310, Lanai City, HI 96793;
+        Tel. (808) 565-7300 or (800) 321-4666; fax (808) 565-4561;
+        <www.lanai-resorts.com>. Lanai’s upcountry, very upscale resort
+        is appointed like an Old English estate, with writing desks,
+        four-poster beds, library, music room. The 21-acre grounds include a
+        croquet court, lawn bowling, horseback-riding stables, formal gardens,
+        and a world-class golf course. 102 rooms.
+        Manele Bay Hotel $$$$ P.O. Box 310, Lanai City, HI 96793;
+        Tel. (808) 565-7700 or (800) 321-4666; fax (808) 565-2483;
+        <www.lanai-resorts.com>. A full-service, quite plush resort on
+        Lanai’s finest beach (Hulopoe), the Manele Bay Hotel offers water
+        sports, golf, tennis, a spa, and jeep tours. 250 rooms.
+
+
+written_2/travel_guides/berlitz1/HandRHawaii.txt lines 233-247/248 100%
 ```
 
-This final example command searches the entire `written_2/travel_guides/berlitz2/*.txt` directory for `.txt` files. It prints out the line number of every line in the entire directory with the phrase "great pioneering skill." This command is great because showcases much like `-w` that a pattern in `-n` isn't limited to a single word, but can be used to find sentences or phrases as well. It accesses all information on `.txt` files in the specified directory to provide the pattern's location and line number, as well as the filepath it was accessed from to creat easy access to it whereabouts.
-
+This final example command shows how the command provides the normal `less` functionality while providing crucial information at the end of the terminal throughout the entire file. It shows what the command looks like after parsing to 100% of the file and reveals that the command does update the percentage throughout the file, provide what the final lines are while still showing the file path. This command exemplifies the functionality of `-M` is not lost while parsing throughout the file and reveals that crucial information about the files ending can be found by using this command and parsing to that location.
