@@ -125,37 +125,61 @@ And after hitting `enter` prints
 
 In the command, the user searches the `written_2/` directory. The command shows the directory is found and then shows tildes `~` because the directory doesn't have text content to display. Since `written_2/` is the pathing into a directory with only directories in it files, the use of this command shows that when forcibly opening a directory directly connected to directories you can not access any of the inner directory contents without directly pathing to their contents themselves. This command demonstrates that pathing to the directory with directories provides no valuable information about the directories the outer directory stores to the user.
 
-## less
+## less -N
 
-The command `grep -w` searches for a targeted word, returns the files with it and returns all lines of those files with that entire word. The `-w` functions to find the target word and line the keyword is in, while the file pathing specified indicates which files it should search for that information. Running the command returns the files with the word and the lines of text, within said files, that the word is in. The command is written as `grep -w "<target_word>" <file_path>`. To learn directly about `grep -w` you can read [this source](https://phoenixnap.com/kb/less-command-in-linux) which I referenced.
+The command `less -N` searches for a targeted file and returns its contents in a parsable manner, but with a column for the line numbers of contents. The command is written as `less -N <file_path>`. To learn directly about `grep -w` you can read [this source](https://phoenixnap.com/kb/less-command-in-linux) which I referenced.
 
-Running `grep -w` in `written_2/` using the command
+Running `less -N` in `written_2/` using the command
 
-`$ grep -w "Chronicles" written_2/travel_guides/berlitz1/*.txt`
-
-Would return 
-
-```
-written_2/travel_guides/berlitz1/HistoryJapan.txt:        (“Chronicles of Japan”), the islands of Japan were born of a marriage
-written_2/travel_guides/berlitz1/HistoryJapan.txt:        Prehistory and Early Chronicles
-written_2/travel_guides/berlitz1/WhereToGreek.txt:        Parian Chronicles, a history of ancient Greece enscribed on marble
-written_2/travel_guides/berlitz2/Barcelona-WhereToGo.txt:The Ajuntament, or Casa de la Ciutat, across the plaza has held Barcelona’s city hall since 1372. It was here that the Consell de Cent, a council of 100 notable citizens, met to deal with civic affairs under the watchful eyes of the king. The original entrance can be seen around the left corner of the building, on the carrer de la Ciutat. Inside, the left staircase leads to the upper gallery of the old courtyard and to the Saló de Cent (Hall of the One Hundred). Its high ceiling resembles the barrel-vault of the Saló del Tinell, and was built at about the same time in the 14th century. The red-and-yellow bars of Catalonia’s flag decorate the walls. The hall where the city council now meets adjoins, and at the head of the black marble staircase is the Saló de les Cròniques (Hall of the Chronicles), noted for the modern murals in sepia tones by Josep Maria Sert.
-```
-
-The above command searches within the entirety of the `written_2/travel_guides/berlitz1/` directory in its `.txt` files for a the pattern "Chronicles" if it is matched as a whole word. The command provides the lines in which "Chronicles" exists in the files of the directory, allowing the user to identify exactly where in each file's text the key word lies. This gives meaningful insight to the contents of a file as well as where information is stored about a particular pattern within a directory.
-
-Running `grep -w` in `written_2/` using the command
-
-`$ grep -w "If a retail customer" written_2/non-fiction/OUP/Abernathy/*.txt`
+`$ less -N written_2/travel_guides/berlitz1/HandRHawaii.txt`
 
 Would return 
 
 ```
-
-written_2/non-fiction/OUP/Abernathy/ch9.txt:The possibility of mass customization for some apparel items presents another market opportunity that demands short-cycle production. If a retail customer pays a premium for a custom pair of jeans, dress shirt, or suit, that customer will expect the item to be delivered to her home within days, not weeks or months. We are a nation of last-minute shoppers, and mass customization will have to compete against overnight delivery of apparel items with less than perfect fit from a specialty catalog company. Speed of delivery has increasingly become part of the competitive equation.
+1
+2
+3
+4
+5
+6         Oahu (Including Honolulu)
+7         Aston Waikiki Sunset $$$ 229 Paoakalani Avenue, Honolulu, HI
+8         96815; Tel. (808) 922-2700 or (800) 336-5599; fax (808) 922-8785;
+9         <www.aston-hotels.com>. One of Aston’s many condominium resort
+10         properties, this modern high-rise has large rooms with complete
+11         kitchens. Lanais afford views of the Diamond Head end of Waikiki Beach.
+12         410 rooms.
+13         Halekulani $$$$ 2199 Kalia Road, Honolulu, HI 96815; Tel.
+14         (808) 923-2311 or (800) 367-2343; fax (808) 926-8004;
+15         <www.halekulani.com>. Very large rooms, most facing the ocean,
 ```
 
-The example command searches within all `.txt` files of the `written_2/travel_guides/berlitz1/` directory for the pattern "If a retail customer" as a word. The command provides that you can search for a phrase or even sentence within a file and are not just restricted to single words to find information while using the `-w` command. It shows both the file the phrase was found and the lines it appears in, giving insight as to where in the directory and where in the file the specific information someone is looking for resides.
+The above command searches within the`written_2/travel_guides/berlitz1/HandRHawaii.txt` text file and provides the first few lines within it, numbering each of those lines even as they are parsed. This gives insight to the locaiton of contents in a file that allows the user to better track where critical information is within it so they can more effectievly search for and track down information in the file.
+
+Running `less -N` in `written_2/` using the command
+
+`$ less -N written_2/travel_guides/berlitz1/HandRHongKong.txt`
+
+Would return, after using the down arrow until the file stopped parsing,
+
+```
+15         arrangements, the Hong Kong Hotel Reservation Center at the
+16         International Airport will be happy to arrange accommodations for you
+17         on your arrival.
+18         As a basic guide, the symbols below have been used to
+19         indicate high-season rates in Hong Kong dollars, based on double
+20         occupancy, with bath or shower. Unless otherwise noted, hotels take all
+21         major credit cards. A 10% service charge and 5% government tax will be
+22         added to the bill.
+23         $$$$above HK$2,500
+24         $$$HK$l,600 to HK$2,500
+25         $$HK$950 to HK$1,600
+26         $below HK$950
+27
+28
+29
+```
+
+The above command searches within the`written_2/travel_guides/berlitz1/HandRHongKong.txt` text file and provides, after parsing downwards as far as possible, the last remaining lines within it, numbering each of those lines even as they are parsed. This example represents how the insight provided by this command, as previously aforementioned, spans the entire file as it can clearly be seen that the numbering is consistent for ever line, including blank space, until the end of the file. It shows that the `less` command functionality specified when first typed in the terminal is consistent throughout the entire file.
 
 ## less
 
