@@ -127,7 +127,7 @@ In the command, the user searches the `written_2/` directory. The command shows 
 
 ## less -N
 
-The command `less -N` searches for a targeted file and returns its contents in a parsable manner, but with a column for the line numbers of contents. The command is written as `less -N <file_path>`. To learn directly about `grep -w` you can read [this source](https://phoenixnap.com/kb/less-command-in-linux) which I referenced.
+The command `less -N` searches for a targeted file and returns its contents in a parsable manner, but with a column for the line numbers of contents. The command is written as `less -N <file_path>`. To learn directly about `less -N` you can read [this source](https://phoenixnap.com/kb/less-command-in-linux) which I referenced.
 
 Running `less -N` in `written_2/` using the command
 
@@ -181,25 +181,33 @@ Would return, after using the down arrow until the file stopped parsing,
 
 The above command searches within the`written_2/travel_guides/berlitz1/HandRHongKong.txt` text file and provides, after parsing downwards as far as possible, the last remaining lines within it, numbering each of those lines even as they are parsed. This example represents how the insight provided by this command, as previously aforementioned, spans the entire file as it can clearly be seen that the numbering is consistent for ever line, including blank space, until the end of the file. It shows that the `less` command functionality specified when first typed in the terminal is consistent throughout the entire file.
 
-## less
+## less -M
 
-The command `grep -n` recursively searches for a targeted word and returns a numbered list of all lines with that word. The `-n` functions to find the target word, its lines, while file pathing specifies the file or files to search that information for. Running the command returns the lines and line numbers where the target word is found in the file. The command is written as `grep -n "<target_word>" <file_path>`. To learn about `grep -n` you can read [this source](https://phoenixnap.com/kb/less-command-in-linux) that I used as a reference.
+The command `less -M` allows parsing of the specified file, but provides more information about each line as they are being parsed. It provides the file path of the file being parsed, the line numbers being shown and the percentage of the file that has been shown by the command at the line the user is at. The command is written as `less -M <file_path>`. To learn about `less -M` you can read [this source](https://phoenixnap.com/kb/less-command-in-linux) that I used as a reference.
 
-Running `grep -n` in `written_2/` using the command
+Running `less -N` in `written_2/` using the command
 
-`$ grep -n "Chronicles" written_2/travel_guides/berlitz1/*.txt`
+`$ less -M written_2/travel_guides/berlitz1/HandRHongKong.txt`
 
 Would return 
 
 ```
-written_2/travel_guides/berlitz1/HistoryJapan.txt:9:        (“Chronicles of Japan”), the islands of Japan were born of a marriage
-written_2/travel_guides/berlitz1/HistoryJapan.txt:23:        Prehistory and Early Chronicles
-written_2/travel_guides/berlitz1/WhereToGreek.txt:352:        Parian Chronicles, a history of ancient Greece enscribed on marble
+        Recommended Hotels
+        Hong Kong has some of the most luxurious hotels in the
+        world, with representatives from all the major international chains.
+        Hotels listed below have full air-conditioning, offer 24-hour or
+        limited room service, and a wide range of facilities. Hong Kong hotels
+        have excellent business services and conference facilities; many have
+        shopping malls.
+        Reservations are strongly recommended, particularly in
+        summer and at Christmas. If you do arrive without making advance
+        arrangements, the Hong Kong Hotel Reservation Center at the
+written_2/travel_guides/berlitz1/HandRHongKong.txt lines 1-15/29 54%
 ```
 
 This example command searches similarily how the `-w` one does. Due to the file pathing, it finds all `.txt` files within the `written_2/travel_guides/berlitz1/` directory for the key word "Chronicles." However, since it is using `-n` the command not only prints the lines in which "Chronicles" exists, but also prints exactly what line numbers they exist at. This allows the user to still search specific texts while also obtaining more relevant information on the key word's whereabouts that would increase their search efficiency.
 
-Running `grep -n` in `written_2/` using the command
+Running `less -N` in `written_2/` using the command
 
 `$ grep -n "great pioneering skill" written_2/travel_guides/berlitz2/*.txt`
 
