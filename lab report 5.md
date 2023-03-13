@@ -4,49 +4,53 @@
 
 The command `less` is used to alter terminal display and interation by causing the terminal to show the first screen of lines that would otherwise be shown and allow the user to use the arrow keys to access more lines after it to explore the file. The user can also use the space bar to go down a screen length in the file. As a result, the command runs until the user exits the file contents displayed by using pressing 'q' to exit `less` and return to the default terminal. This document will be exploring examples of different command line options for the `less` command to achieve different results. The folder `written_2/` will be searched through using the various `less` commands present. 
 
-## less
+## less -p
 
 The command `grep -rl` is a quick way to recursively search files for a line. The `-r` aspect does the recursion, while the `-l` is responsible for listing file names. The function of recursion is to call on itself to work through different lists of files or directories. So when `grep -rl` is run, the recursive aspect is that the command would call itself on the specified directory and within that call itself again to look at any directory or file within it. Those calls then call themselves again to search driectories and files within them, so on and so forth. As a result, running the command returns all files with the target word specified. It is different from `grep -l` because without the recursive aspect, `grep -l` needs a file path to a directory with files in it to run properly. Using `grep -l` explores the file path to files specified, while `grep -rl` can be used on a directory to iterate through everything in it to find a specific pattern in a broader scope of files at one time.  The command is written as `grep -rl "<target_word>" <file_path>` and searches for the target word in the specified file path and returns all files with the word. To read directly about `grep -rl` you can read [this article](https://phoenixnap.com/kb/less-command-in-linux) with all the details.
 
-Running `grep -rl` in `written_2/` using the command
+Running `less -p` in `written_2/` using the command
 
-`$ grep -rl "vistas" written 2_/`
+`$ less -p "vistas" written_2/travel_guides/berlitz1/HandRHawaii.txt`
 
 Would return
 
 ```
-written_2/travel_guides/berlitz1/IntroDublin.txt
-written_2/travel_guides/berlitz1/IntroLakeDistrict.txt
-written_2/travel_guides/berlitz1/IntroMadeira.txt
-written_2/travel_guides/berlitz1/WhereToIbiza.txt
-written_2/travel_guides/berlitz1/WhereToIsrael.txt
-written_2/travel_guides/berlitz1/WhereToJerusalem.txt
-written_2/travel_guides/berlitz1/WhereToLakeDistrict.txt
-written_2/travel_guides/berlitz1/WhereToMadeira.txt
-written_2/travel_guides/berlitz2/CanaryIslands-WhereToGo.txt
-written_2/travel_guides/berlitz2/China-WhereToGo.txt
-written_2/travel_guides/berlitz2/Costa-WhereToGo.txt
-written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt
-written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
+Pattern not found (press return)
+```
+
+And then after hitting `return` would print
+
+```
+Oahu (Including Honolulu)
+Aston Waikiki Sunset $$$ 229 Paoakalani Avenue, Honolulu, HI
+96815; Tel. (808) 922-2700 or (800) 336-5599; fax (808) 922-8785;
+<www.aston-hotels.com>. One of Aston’s many condominium resort
+properties, this modern high-rise has large rooms with complete
+kitchens. Lanais afford views of the Diamond Head end of Waikiki Beach.
+410 rooms.
+Halekulani $$$$ 2199 Kalia Road, Honolulu, HI 96815; Tel.
+(808) 923-2311 or (800) 367-2343; fax (808) 926-8004;
+<www.halekulani.com>. Very large rooms, most facing the ocean,
 ```
 
 In the example above the command is searching for the word "vistas" in the directory `written_2/` and returns all the files with the word in it. This is useful because it allows the user to check for the existence of specific contents within the entire directory at will. Since we are using `grep -rl` instead of `grep -l` this is possible because the recursive aspect of the command allows us to search a directory and allow the recursion to locate `.txt` files without the user needing to specify the file path to each `.txt` shown in the results. It can be determined if the word or pattern is relevant to any of the information in the entire directory from the single command.
 
-Running `grep -rl` in `written_2/` using the command
+Running `less -p` in `written_2/` using the command
 
-`$ grep -rl "vistas" written 2_/travel_guides/berlitz1`
+`$ less -p "Aston" written_2/travel_guides/berlitz1/HandRHawaii.txt`
 
 Would return
 
 ```
-written_2/travel_guides/berlitz1/IntroDublin.txt
-written_2/travel_guides/berlitz1/IntroLakeDistrict.txt
-written_2/travel_guides/berlitz1/IntroMadeira.txt
-written_2/travel_guides/berlitz1/WhereToIbiza.txt
-written_2/travel_guides/berlitz1/WhereToIsrael.txt
-written_2/travel_guides/berlitz1/WhereToJerusalem.txt
-written_2/travel_guides/berlitz1/WhereToLakeDistrict.txt
-written_2/travel_guides/berlitz1/WhereToMadeira.txt
+Aston Waikiki Sunset $$$ 229 Paoakalani Avenue, Honolulu, HI
+96815; Tel. (808) 922-2700 or (800) 336-5599; fax (808) 922-8785;
+<www.aston-hotels.com>. One of Aston’s many condominium resort
+properties, this modern high-rise has large rooms with complete
+kitchens. Lanais afford views of the Diamond Head end of Waikiki Beach.
+410 rooms.
+Halekulani $$$$ 2199 Kalia Road, Honolulu, HI 96815; Tel.
+(808) 923-2311 or (800) 367-2343; fax (808) 926-8004;
+<www.halekulani.com>. Very large rooms, most facing the ocean,
 ```
 
 In this new command the search for the word "vista" is narrowed into the `berlitz1` directory within `travel_guides`. It is useful to note `grep -l` could have been used to achieve the same results in this case it `/*.txt` was added to the end of the command to search for `.txt` files within the directory. This is only because   `berlitz1` is a directory with files directly after it and not just storing directories. In this case `grep -rl` is useful because when we want to search in a set of directories but do not want to worry about the location of the files specifically because the recursive aspect of the function handles that for us. This example of command still allows the user to search subdirectories for relevant or irrelavant information to assess content of specific files, rather than the entire directory as shown previously. The command returns which files within `berlitz1` have the word "vista," making the printed output much more manageable and specific to the directory.
