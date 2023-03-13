@@ -2,7 +2,7 @@
 
 # Researching Commands Once Again
 
-The command `less` is used to alter terminal display and interation by causing the terminal to show the first screen of lines that would be (Week 4 for Reference.). This document will be exploring examples of different command line options for the `find` command to achieve different results. The folder `written_2/` will be searched through using the various `find` commands present. 
+The command `less` is used to alter terminal display and interation by causing the terminal to show the first screen of lines that would otherwise be shown and allow the user to use the arrow keys to access more lines after it to explore the file. The user can also use the space bar to go down a screen length in the file. As a result, the command runs until the user exits the file contents displayed by using pressing 'q' to exit `less` and return to the default terminal. This document will be exploring examples of different command line options for the `less` command to achieve different results. The folder `written_2/` will be searched through using the various `less` commands present. 
 
 ## less
 
