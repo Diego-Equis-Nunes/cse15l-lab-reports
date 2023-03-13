@@ -55,135 +55,75 @@ Halekulani $$$$ 2199 Kalia Road, Honolulu, HI 96815; Tel.
 
 In the example above the command is searching for the word "Astong" in the directory `written_2/travel_guides/berlitz1/HandRHawaii.txt/` and returns the line of file including it and everything after it in the terminal display. In this case the pattern is found, so the terminal prints the file contents starting at the first line the pattern is found and then allows access to the file's contents from there. The user can access previous and subsequent lines from that location. This is useful because it indicates to the user the relevant information they are searching does exist and they can more purposefully search around the information they were looking for when typing the command. It quickly directs the user to the information they are searching without them having to search a file themselves while allowing them to still explore the rest of the file by default functionality of `less` if need be.
 
-## less
+## less -f
 
-The command `grep -rc` recursively searches files for a pattern and returns the count of lines with that pattern. The `-r` aspect triggers the recursion, which works exactly as desribed in the explanation for `grep -rl` as shown above, while the `-c` is responsible for listing the count. Running the command returns the count of lines with the target word specified. The command is written as `grep -rc "<target_word>" <file_path>`. To learn directly about `grep -rc` you can read [this source](https://phoenixnap.com/kb/less-command-in-linux/) that I referenced.
+The command `less f` force opens files that aren't considered standard files. This means it can open things such as directories in place of a file, or even files special to the operating device. The command is written as `less -f <file_path>` where the file path doesn't have to lead to a file since this command can open directories as well. To learn directly about `less -f` you can read [this source](https://phoenixnap.com/kb/less-command-in-linux/) that I referenced.
 
-Running `grep -rc` in `written_2/` using the command
+Running `less -f` in `written_2/` using the command
 
-`$ grep -rc "vistas" written_2/travel_guides/berlitz1`
-
-Would return
-
-```
-written_2/travel_guides/berlitz1/HandRHawaii.txt:0
-written_2/travel_guides/berlitz1/HandRHongKong.txt:0
-written_2/travel_guides/berlitz1/HandRIbiza.txt:0
-written_2/travel_guides/berlitz1/HandRIsrael.txt:0
-written_2/travel_guides/berlitz1/HandRIstanbul.txt:0
-written_2/travel_guides/berlitz1/HandRJamaica.txt:0
-written_2/travel_guides/berlitz1/HandRJerusalem.txt:0
-written_2/travel_guides/berlitz1/HandRLakeDistrict.txt:0
-written_2/travel_guides/berlitz1/HandRLasVegas.txt:0
-written_2/travel_guides/berlitz1/HandRLisbon.txt:0
-written_2/travel_guides/berlitz1/HandRLosAngeles.txt:0
-written_2/travel_guides/berlitz1/HandRMadeira.txt:0
-written_2/travel_guides/berlitz1/HandRMadrid.txt:0
-written_2/travel_guides/berlitz1/HandRMallorca.txt:0
-written_2/travel_guides/berlitz1/HistoryDublin.txt:0
-written_2/travel_guides/berlitz1/HistoryEdinburgh.txt:0
-written_2/travel_guides/berlitz1/HistoryEgypt.txt:0
-written_2/travel_guides/berlitz1/HistoryFrance.txt:0
-written_2/travel_guides/berlitz1/HistoryFWI.txt:0
-written_2/travel_guides/berlitz1/HistoryGreek.txt:0
-written_2/travel_guides/berlitz1/HistoryHawaii.txt:0
-written_2/travel_guides/berlitz1/HistoryHongKong.txt:0
-written_2/travel_guides/berlitz1/HistoryIbiza.txt:0
-written_2/travel_guides/berlitz1/HistoryIndia.txt:0
-written_2/travel_guides/berlitz1/HistoryIsrael.txt:0
-written_2/travel_guides/berlitz1/HistoryIstanbul.txt:0
-written_2/travel_guides/berlitz1/HistoryItaly.txt:0
-written_2/travel_guides/berlitz1/HistoryJamaica.txt:0
-written_2/travel_guides/berlitz1/HistoryJapan.txt:0
-written_2/travel_guides/berlitz1/HistoryJerusalem.txt:0
-written_2/travel_guides/berlitz1/HistoryLakeDistrict.txt:0
-written_2/travel_guides/berlitz1/HistoryLasVegas.txt:0
-written_2/travel_guides/berlitz1/HistoryMadeira.txt:0
-written_2/travel_guides/berlitz1/HistoryMadrid.txt:0
-written_2/travel_guides/berlitz1/HistoryMalaysia.txt:0
-written_2/travel_guides/berlitz1/HistoryMallorca.txt:0
-written_2/travel_guides/berlitz1/IntroDublin.txt:1
-written_2/travel_guides/berlitz1/IntroEdinburgh.txt:0
-written_2/travel_guides/berlitz1/IntroEgypt.txt:0
-written_2/travel_guides/berlitz1/IntroFrance.txt:0
-written_2/travel_guides/berlitz1/IntroFWI.txt:0
-written_2/travel_guides/berlitz1/IntroGreek.txt:0
-written_2/travel_guides/berlitz1/IntroHongKong.txt:0
-written_2/travel_guides/berlitz1/IntroIbiza.txt:0
-written_2/travel_guides/berlitz1/IntroIndia.txt:0
-written_2/travel_guides/berlitz1/IntroIsrael.txt:0
-written_2/travel_guides/berlitz1/IntroIstanbul.txt:0
-written_2/travel_guides/berlitz1/IntroItaly.txt:0
-written_2/travel_guides/berlitz1/IntroJamaica.txt:0
-written_2/travel_guides/berlitz1/IntroJapan.txt:0
-written_2/travel_guides/berlitz1/IntroJerusalem.txt:0
-written_2/travel_guides/berlitz1/IntroLakeDistrict.txt:1
-written_2/travel_guides/berlitz1/IntroLasVegas.txt:0
-written_2/travel_guides/berlitz1/IntroLosAngeles.txt:0
-written_2/travel_guides/berlitz1/IntroMadeira.txt:1
-written_2/travel_guides/berlitz1/IntroMadrid.txt:0
-written_2/travel_guides/berlitz1/IntroMalaysia.txt:0
-written_2/travel_guides/berlitz1/IntroMallorca.txt:0
-written_2/travel_guides/berlitz1/JungleMalaysia.txt:0
-written_2/travel_guides/berlitz1/WhatToDublin.txt:0
-written_2/travel_guides/berlitz1/WhatToEdinburgh.txt:0
-written_2/travel_guides/berlitz1/WhatToEgypt.txt:0
-written_2/travel_guides/berlitz1/WhatToFrance.txt:0
-written_2/travel_guides/berlitz1/WhatToFWI.txt:0
-written_2/travel_guides/berlitz1/WhatToGreek.txt:0
-written_2/travel_guides/berlitz1/WhatToHawaii.txt:0
-written_2/travel_guides/berlitz1/WhatToHongKong.txt:0
-written_2/travel_guides/berlitz1/WhatToIbiza.txt:0
-written_2/travel_guides/berlitz1/WhatToIndia.txt:0
-written_2/travel_guides/berlitz1/WhatToIsrael.txt:0
-written_2/travel_guides/berlitz1/WhatToIstanbul.txt:0
-written_2/travel_guides/berlitz1/WhatToItaly.txt:0
-written_2/travel_guides/berlitz1/WhatToJamaica.txt:0
-written_2/travel_guides/berlitz1/WhatToJapan.txt:0
-written_2/travel_guides/berlitz1/WhatToLakeDistrict.txt:0
-written_2/travel_guides/berlitz1/WhatToLasVegas.txt:0
-written_2/travel_guides/berlitz1/WhatToLosAngeles.txt:0
-written_2/travel_guides/berlitz1/WhatToMadeira.txt:0
-written_2/travel_guides/berlitz1/WhatToMalaysia.txt:0
-written_2/travel_guides/berlitz1/WhatToMallorca.txt:0
-written_2/travel_guides/berlitz1/WhereToDublin.txt:0
-written_2/travel_guides/berlitz1/WhereToEdinburgh.txt:0
-written_2/travel_guides/berlitz1/WhereToEgypt.txt:0
-written_2/travel_guides/berlitz1/WhereToFrance.txt:0
-written_2/travel_guides/berlitz1/WhereToFWI.txt:0
-written_2/travel_guides/berlitz1/WhereToGreek.txt:0
-written_2/travel_guides/berlitz1/WhereToHawaii.txt:0
-written_2/travel_guides/berlitz1/WhereToHongKong.txt:0
-written_2/travel_guides/berlitz1/WhereToIbiza.txt:2
-written_2/travel_guides/berlitz1/WhereToIndia.txt:0
-written_2/travel_guides/berlitz1/WhereToIsrael.txt:1
-written_2/travel_guides/berlitz1/WhereToIstanbul.txt:0
-written_2/travel_guides/berlitz1/WhereToItaly.txt:0
-written_2/travel_guides/berlitz1/WhereToJapan.txt:0
-written_2/travel_guides/berlitz1/WhereToJerusalem.txt:2
-written_2/travel_guides/berlitz1/WhereToLakeDistrict.txt:1
-written_2/travel_guides/berlitz1/WhereToLosAngeles.txt:0
-written_2/travel_guides/berlitz1/WhereToMadeira.txt:1
-written_2/travel_guides/berlitz1/WhereToMadrid.txt:0
-written_2/travel_guides/berlitz1/WhereToMalaysia.txt:0
-written_2/travel_guides/berlitz1/WhereToMallorca.txt:0
-```
-
-In the command, the user searches the entire `berlitz1` directory for the word "vistas" and receives a count of "vistas" for every one of its file. The command shows its presence and non-presence in every file making it easy for the user to locate where certain key phrases are and aren't within a specific directory. It's especially helpful to add the recursive aspect to this command because otherwise, using `grep -c` alone would require a filepath to a directory with `.txt` files within it. By adding `grep -r` into the mix, we are able to search an entire directory because the recursion identifies the filepaths to each `.txt` file for us. Regardless of the approach, it is the `grep -c` aspect that takes the file path given and displays the amount of times the pattern specified is matched within the file. 
-
-Running `grep -rc` in `written_2/` using the command
-
-`$ grep -rc "vistas" written_2/travel_guides/berlitz2/Vallarta*`
+`$ less -f "vistas" written_2/travel_guides/berlitz1`
 
 Would return
 
 ```
-written_2/travel_guides/berlitz2/Vallarta-History.txt:0
-written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt:0
-written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:1
+written_2/travel_guides/berlitz1/ (END)
 ```
 
-In the above example, the command searches for "vistas" again but this time searches within a file pattern within the directory `berlitz2`. It allows the user to search within `.txt` files titled `Vallarta` giving the user much more control over how specific they need to search for the given key word. The command gives a count indicating the word's presence in every file that matches the pattern and path specified in the command. In this example, `grep -rc` and `grep -c` don't differ much in effectiveness because the user has a specific path they need to gather information from. However, it does show that `grep -rc` still has the capability to be as specific as searching a specific single directory path leading directly to `.txt` files on top of being able to search entire directories without detailed specification of file location. It also worth noting that without recursion `Vallarta*` would not work at the end of the command just using `-c` and instead searching for `.txt` files using `*.txt` at the end of the file path would be necessary. So even though both `-rc` and `-c` can search for specific pathing, `-rc` still gives more freedom in that regard. Regardless of the approach, it is still the `grep -c` aspect taking the given file path and searching for the count of the specified pattern within the files.
+And after hitting `enter` prints
+
+```
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+```
+
+In the command, the user searches the `written_2/travel_guides/berlitz1/` directory. The command shows the directory is found and then shows tildes `~` because the directory doesn't have text content to display. Since `written_2/travel_guides/berlitz1/` is the pathing into a directory with only `.txt` files, the use of this command shows that when forcibly opening a directory directly connected to text files you can not access any of those contents without directly pathing to them. This command demonstrates that pathing to the directory with text files provides no valuable information about the text files to the user.
+
+Running `less -f` in `written_2/` using the command
+
+`$ less -f "vistas" written_2/`
+
+Would return
+
+```
+written_2/ (END)
+```
+
+And after hitting `enter` prints
+
+```
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+```
+
+In the command, the user searches the `written_2/` directory. The command shows the directory is found and then shows tildes `~` because the directory doesn't have text content to display. Since `written_2/` is the pathing into a directory with only directories in it files, the use of this command shows that when forcibly opening a directory directly connected to directories you can not access any of the inner directory contents without directly pathing to their contents themselves. This command demonstrates that pathing to the directory with directories provides no valuable information about the directories the outer directory stores to the user.
 
 ## less
 
